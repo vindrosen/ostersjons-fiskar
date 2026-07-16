@@ -59,7 +59,14 @@ jobs:
       - name: Kontrollera att .nojekyll följde med
         # Utan filen filtrerar Jekyll bort _next/ och sajten tappar all CSS
         # och JavaScript. Billigare att fånga här än att felsöka en trasig sajt.
-        run: test -f out/.nojekyll || (echo "FEL: out/.nojekyll saknas" && exit 1)
+        #
+        # Blockskalär (|) krävs: kommandot innehåller "FEL: ..." och ett
+        # kolon följt av mellanslag gör att YAML tolkar raden som en ny nyckel.
+        run: |
+          if [ ! -f out/.nojekyll ]; then
+            echo "FEL - out/.nojekyll saknas. Utan den serverar GitHub Pages sajten utan CSS och JavaScript."
+            exit 1
+          fi
 
       - name: Ladda upp artefakt
         uses: actions/upload-pages-artifact@v3
