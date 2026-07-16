@@ -40,14 +40,19 @@ jobs:
           cache: npm
 
       - name: Installera beroenden
-        # --omit=optional hoppar över sharps plattformsbinärer.
+        # npm install, inte npm ci – med flit.
         #
-        # Två skäl. Dels behövs sharp bara av npm run images:optimize, som körs
-        # lokalt – bilderna ligger färdiga i public/ och bygget rör dem aldrig.
-        # Dels innehåller @img/sharp-wasm32 beroenden (@emnapi/*) som npm inte
-        # skriver till låsfilen när den genereras på Windows, vilket får npm ci
-        # att avbryta på en Linux-runner.
-        run: npm ci --omit=optional
+        # Låsfilen genereras på Windows och blir då plattformsbiased: paket med
+        # wasm32-fallback (@tailwindcss/oxide-wasm32-wasi, @img/sharp-wasm32)
+        # kräver @emnapi/core och @emnapi/runtime, men npm skriver aldrig in dem
+        # när trädet löses upp på Windows. På en Linux-runner avbryter npm ci då
+        # med "Missing: @emnapi/runtime from lock file". Att regenerera låsfilen
+        # hjälper inte – biasen ligger i npm:s upplösning, inte i filen.
+        #
+        # npm install löser upp per plattform och läker skillnaden. Versionerna
+        # styrs fortfarande av låsfilen; det som tillkommer är de binärer som
+        # just den här plattformen behöver.
+        run: npm install --no-audit --no-fund
 
       - name: Läs Pages-konfigurationen
         id: pages
