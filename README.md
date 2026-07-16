@@ -21,7 +21,9 @@ npm run dev          # utvecklingsserver på http://localhost:3000
 | `npm run build` | Produktionsbygge – förrenderar alla artsidor |
 | `npm start` | Kör produktionsbygget |
 | `npm run lint` | ESLint |
-| `npm run images:optimize` | Beskär och komprimerar bilder till `public/` |
+| `npm run images:optimize` | Beskär, skalar och komprimerar bilder till `public/` |
+
+Bygget skriver en statisk sajt till `out/` – inga serveranrop, ingen Node i drift.
 
 ---
 
@@ -136,6 +138,55 @@ rutter som faktiskt finns, och startsidans kortsektion ersattes med fakta om
 
 ---
 
+## Publicera på GitHub Pages
+
+Sajten är byggd för att publiceras statiskt. Workflowet
+`.github/workflows/deploy.yml` bygger och publicerar vid varje push till
+`main`/`master`.
+
+**Engångsinställning:** Settings → Pages → Source: **GitHub Actions**. Repot bör
+heta något ASCII-vänligt (t.ex. `ostersjons-fiskar`) – ett namn med å, ä eller ö
+ger en procentkodad URL.
+
+Sajten hamnar på `https://<användare>.github.io/<repo-namn>/`, alltså i en
+**underkatalog**. Det är hela knuten, och fyra saker i projektet finns bara för
+att lösa den:
+
+| Sak | Varför |
+| --- | --- |
+| `NEXT_PUBLIC_BASE_PATH` | Sätts av workflowet från Pages-konfigurationen. Både `next.config.ts` och `src/lib/site.ts` läser den. |
+| `src/lib/image-loader.ts` | **`next/image` lägger inte på `basePath` på bildsökvägar.** Utan laddaren 404:ar varenda bild – sidan ser hel ut men är helt bildlös. |
+| `absoluteUrl()` i `site.ts` | En naken sökväg som `/om` tolkas mot domänroten och tappar underkatalogen. Alla canonical-länkar, OG-bilder och sitemap-URL:er går därför via hjälpfunktionen. |
+| `public/.nojekyll` | GitHub Pages kör Jekyll, som ignorerar mappar med inledande understreck. Utan filen serveras sajten utan `_next/` – alltså utan CSS och JavaScript. |
+
+Vill du i stället köra på eget domännamn eller en användarsida (roten): lämna
+`NEXT_PUBLIC_BASE_PATH` tom. Allt ovan fungerar då likadant, bara utan prefix.
+
+### Testa exporten lokalt
+
+```bash
+npm run build
+npx serve out
+```
+
+Vill du reproducera underkatalogen som på Pages: lägg `out/` i en mapp som heter
+som repot och servera mappen ovanför.
+
+### Två egenheter värda att känna till
+
+**`postbuild` plattar ut förhämtningsfiler.** Next 16 skriver sina
+RSC-segmentnyttolaster som kataloger (`__next.fiskar/$d$slug.txt`) men routern
+begär dem punktseparerade (`__next.fiskar.$d$slug.txt`). På en filserver utan
+omskrivningsregler ger det 18 st 404:or per sidladdning och förhämtningen slutar
+fungera. `scripts/flatten-rsc-payloads.mjs` kopierar filerna till de namn routern
+faktiskt ber om. Skulle Next börja skriva dem platt blir skriptet en tom operation.
+
+**Två typsnittsvarningar i konsolen är väntade.** Google delar Inter i flera
+filer per unicode-intervall; next/font förladdar ett par som sidan inte råkar
+använda. Bortkastat: några kilobyte. Texten renderar korrekt.
+
+---
+
 ## Bilder
 
 Varje art har **exakt en bild**, som återanvänds överallt i appen. Bilderna är
@@ -145,13 +196,26 @@ bakgrund, utan text, redskap eller dekor.
 Pipelinen är två steg:
 
 ```
-assets/generated/   →  npm run images:optimize  →  public/images/
+assets/generated/   →  npm run images:optimize  →  public/images/  +  src/data/image-manifest.json
 (masterfiler)                                      (det webben laddar)
 ```
 
 `scripts/optimize-fish-images.mjs` beskär bort den genomskinliga ramen (så att
-fisken fyller sin ruta i stället för att sväva i ett tomrum), krymper och
-komprimerar. Det tar bort omkring **75 %** av vikten: 11 MB → 2,7 MB.
+fisken fyller sin ruta i stället för att sväva i ett tomrum), skalar och
+komprimerar.
+
+Eftersom sajten publiceras statiskt finns ingen server som kan skala bilder på
+begäran – **det som inte genereras här finns inte i produktion**. Skriptet skriver
+därför en trappa av bredder per bild (`gadda-256.webp`, `gadda-384.webp` …) och ett
+manifest över vilka bredder som faktiskt finns. `src/lib/image-loader.ts` läser
+manifestet och låter webbläsaren välja rätt storlek via srcset.
+
+Utan trappan skulle originalet (~200 kB per fisk) skickas till alla: **startsidan
+laddar nu 334 kB bilder i stället för ~2,4 MB.**
+
+> Bredderna i `WIDTH_LADDER` (skriptet) måste stämma överens med `imageSizes` +
+> `deviceSizes` i `next.config.ts`. Går de isär efterfrågar Next storlekar som
+> aldrig genererats.
 
 **Originalen i `assets/generated/` versionshanteras med flit.** De gör att
 bilderna kan bearbetas om – ny beskärning, andra format – utan att kosta nya

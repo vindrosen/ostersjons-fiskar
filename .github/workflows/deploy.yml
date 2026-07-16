@@ -1,0 +1,78 @@
+name: Publicera till GitHub Pages
+
+# Bygger den statiska exporten och publicerar den på GitHub Pages.
+#
+# Förutsättningar i repots inställningar:
+#   Settings → Pages → Source: "GitHub Actions"
+#
+# Sajten hamnar på https://<användare>.github.io/<repo-namn>/ , vilket är en
+# underkatalog. Därför sätts NEXT_PUBLIC_BASE_PATH nedan – utan den letar
+# sidorna efter bilder och skript i domänroten och hittar ingenting.
+
+on:
+  push:
+    branches: [main, master]
+  # Gör det möjligt att publicera manuellt från fliken Actions.
+  workflow_dispatch:
+
+# Behörigheter som deploy-steget kräver.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Låt en pågående publicering göra klart; köa bara den senaste därefter.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hämta koden
+        uses: actions/checkout@v4
+
+      - name: Installera Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Installera beroenden
+        run: npm ci
+
+      - name: Läs Pages-konfigurationen
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Bygg statisk export
+        env:
+          # ${{ steps.pages.outputs.base_path }} blir "/<repo-namn>" på en
+          # projektsida och tom sträng på en användarsida eller eget domännamn.
+          # Att läsa den härifrån gör att ett byte av repo-namn inte kräver
+          # någon kodändring.
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          NEXT_PUBLIC_SITE_URL: ${{ steps.pages.outputs.origin }}${{ steps.pages.outputs.base_path }}
+        run: npm run build
+
+      - name: Kontrollera att .nojekyll följde med
+        # Utan filen filtrerar Jekyll bort _next/ och sajten tappar all CSS
+        # och JavaScript. Billigare att fånga här än att felsöka en trasig sajt.
+        run: test -f out/.nojekyll || (echo "FEL: out/.nojekyll saknas" && exit 1)
+
+      - name: Ladda upp artefakt
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicera
+        id: deployment
+        uses: actions/deploy-pages@v4

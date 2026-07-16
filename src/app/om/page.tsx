@@ -11,13 +11,13 @@ import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { getFishSummaries } from "@/lib/fish-repository";
-import { REGULATIONS_SOURCE_URL, SITE } from "@/lib/site";
+import { REGULATIONS_SOURCE_URL, SITE, absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Om guiden",
   description:
     "Om Östersjöns Fiskar – vad guiden innehåller, var uppgifterna kommer ifrån och hur du använder dem ansvarsfullt.",
-  alternates: { canonical: "/om" },
+  alternates: { canonical: absoluteUrl("/om") },
 };
 
 export default async function AboutPage() {

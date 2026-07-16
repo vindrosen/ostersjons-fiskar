@@ -3,7 +3,13 @@
  */
 
 import type { MetadataRoute } from "next";
-import { SITE } from "@/lib/site";
+import { absoluteUrl } from "@/lib/site";
+
+/**
+ * Krävs för `output: "export"`. Utan detta avbryts bygget med
+ * "export const dynamic ... not configured on route /robots.txt".
+ */
+export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -11,6 +17,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: `${SITE.url}/sitemap.xml`,
+    sitemap: absoluteUrl("/sitemap.xml"),
   };
 }

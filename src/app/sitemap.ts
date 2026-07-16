@@ -7,7 +7,13 @@
 
 import type { MetadataRoute } from "next";
 import { getAllFishSlugs } from "@/lib/fish-repository";
-import { SITE } from "@/lib/site";
+import { SITE, absoluteUrl } from "@/lib/site";
+
+/**
+ * Krävs för `output: "export"`. Utan detta avbryts bygget med
+ * "export const dynamic ... not configured on route /sitemap.xml".
+ */
+export const dynamic = "force-static";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const slugs = await getAllFishSlugs();
@@ -15,12 +21,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: SITE.url, lastModified, changeFrequency: "monthly", priority: 1 },
-    { url: `${SITE.url}/fiskar`, lastModified, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${SITE.url}/om`, lastModified, changeFrequency: "yearly", priority: 0.3 },
+    { url: absoluteUrl("/fiskar"), lastModified, changeFrequency: "monthly", priority: 0.9 },
+    { url: absoluteUrl("/om"), lastModified, changeFrequency: "yearly", priority: 0.3 },
   ];
 
   const fishRoutes: MetadataRoute.Sitemap = slugs.map((slug) => ({
-    url: `${SITE.url}/fiskar/${slug}`,
+    url: absoluteUrl(`/fiskar/${slug}`),
     lastModified,
     changeFrequency: "yearly",
     priority: 0.8,

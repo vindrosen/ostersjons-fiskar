@@ -7,12 +7,13 @@ import { FishResults } from "@/components/home/FishResults";
 import { FishFilterProvider } from "@/components/home/FishFilterProvider";
 import { SearchField } from "@/components/home/SearchField";
 import { getFishSummaries } from "@/lib/fish-repository";
+import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Alla arter",
   description:
     "Alla fiskarter i guiden till Östersjön – sök på svenskt eller latinskt namn och filtrera på fisktyp.",
-  alternates: { canonical: "/fiskar" },
+  alternates: { canonical: absoluteUrl("/fiskar") },
 };
 
 export default async function FishListPage() {

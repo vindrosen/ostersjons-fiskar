@@ -30,7 +30,8 @@ import {
   formatLengthRange,
   formatWeight,
 } from "@/lib/labels";
-import { SITE } from "@/lib/site";
+import { SITE, absoluteUrl } from "@/lib/site";
+import { largestImageVariant } from "@/lib/image-loader";
 import { BookOpen, Waves } from "lucide-react";
 
 interface FishPageProps {
@@ -52,23 +53,27 @@ export async function generateMetadata({ params }: FishPageProps): Promise<Metad
   }
 
   const title = `${fish.name} (${fish.latinName})`;
+  // Absoluta URL:er genomgående: en naken sökväg som "/fiskar/gadda" skulle
+  // tolkas mot domänroten och tappa underkatalogen sajten ligger i.
+  const pageUrl = absoluteUrl(`/fiskar/${fish.slug}`);
+  const imageUrl = absoluteUrl(largestImageVariant(fish.image.src));
 
   return {
     title,
     description: fish.shortDescription,
-    alternates: { canonical: `/fiskar/${fish.slug}` },
+    alternates: { canonical: pageUrl },
     openGraph: {
       type: "article",
       title,
       description: fish.shortDescription,
-      url: `${SITE.url}/fiskar/${fish.slug}`,
-      images: [{ url: fish.image.src, alt: fish.image.alt }],
+      url: pageUrl,
+      images: [{ url: imageUrl, alt: fish.image.alt }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description: fish.shortDescription,
-      images: [fish.image.src],
+      images: [imageUrl],
     },
   };
 }
@@ -102,7 +107,7 @@ export default async function FishPage({ params }: FishPageProps) {
     "@type": "Article",
     headline: `${fish.name} (${fish.latinName})`,
     description: fish.shortDescription,
-    image: `${SITE.url}${fish.image.src}`,
+    image: absoluteUrl(largestImageVariant(fish.image.src)),
     about: {
       "@type": "Thing",
       name: fish.name,

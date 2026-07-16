@@ -16,12 +16,16 @@ const inter = Inter({
 /**
  * Antikva som uteslutande används kursivt för latinska artnamn.
  * Ger samma känsla som artnamnen i en tryckt fiskguide.
+ *
+ * Bara den kursiva stilen laddas: `.latin-name` sätter alltid `font-style:
+ * italic`, så den upprätta varianten skulle bara vara en extra nedladdning
+ * som ingen ser.
  */
 const instrumentSerif = Instrument_Serif({
   variable: "--font-instrument-serif",
   subsets: ["latin"],
   weight: "400",
-  style: ["normal", "italic"],
+  style: "italic",
   display: "swap",
 });
 
