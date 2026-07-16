@@ -1,0 +1,231 @@
+@import "tailwindcss";
+
+/**
+ * Östersjöns Fiskar – designsystem
+ *
+ * Färgskalorna nedan är appens råa palett (djuphavsblått, tång-grönt, sand).
+ * Ovanpå dem ligger semantiska tokens (`--color-surface`, `--color-border` …)
+ * som byter värde mellan ljust och mörkt tema. Komponenter använder *alltid*
+ * de semantiska tokens – aldrig råa skalor för ytor – så att temaväxlingen
+ * sker på ett enda ställe.
+ */
+
+/* Mörkt tema styrs av klassen .dark på <html>, satt av ThemeScript före första
+   målningen och därefter av ThemeToggle. Standard är systeminställningen. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: var(--font-instrument-serif), ui-serif, Georgia, serif;
+
+  /* Havsblå – appens primärfärg, hämtad från Östersjöns djupare toner. */
+  --color-sea-50: #eef7fb;
+  --color-sea-100: #d6edf6;
+  --color-sea-200: #b0dcec;
+  --color-sea-300: #7cc3dd;
+  --color-sea-400: #45a3c6;
+  --color-sea-500: #2585ab;
+  --color-sea-600: #1c6b8f;
+  --color-sea-700: #1a5674;
+  --color-sea-800: #1b4860;
+  --color-sea-900: #133549;
+  --color-sea-950: #0a2032;
+
+  /* Tång/skärgårdsgrönt – accent för positiva värden (bästa fisketider). */
+  --color-kelp-50: #eefbf3;
+  --color-kelp-100: #d5f5e3;
+  --color-kelp-200: #aeeacb;
+  --color-kelp-300: #78d8ac;
+  --color-kelp-400: #41bd89;
+  --color-kelp-500: #1fa06d;
+  --color-kelp-600: #128057;
+  --color-kelp-700: #106648;
+  --color-kelp-800: #11513a;
+  --color-kelp-900: #0e4231;
+  --color-kelp-950: #04251a;
+
+  /* Sand/kalksten – varm neutral som mjukar upp allt det blå. */
+  --color-sand-50: #faf8f3;
+  --color-sand-100: #f3efe4;
+  --color-sand-200: #e7dfc9;
+  --color-sand-300: #d6c8a4;
+
+  /* Bärnsten – "bra men inte bäst" i fiskekalendern. */
+  --color-amber-sea-200: #fde9b8;
+  --color-amber-sea-400: #f4c14e;
+  --color-amber-sea-500: #e6a520;
+
+  /* Djupt marinblått – header, footer och hero-overlay. */
+  --color-deep-800: #0c2a45;
+  --color-deep-900: #081f36;
+  --color-deep-950: #05172a;
+
+  /* Mjuka skuggor med blå ton i stället för neutral grå – djup utan smuts. */
+  --shadow-card: 0 1px 2px rgb(8 31 54 / 0.04), 0 4px 16px -4px rgb(8 31 54 / 0.08);
+  --shadow-card-hover: 0 2px 4px rgb(8 31 54 / 0.06), 0 16px 32px -8px rgb(8 31 54 / 0.16);
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Semantiska tokens – ljust tema (standard). */
+:root {
+  --background: #faf8f3;
+  --background-alt: #ffffff;
+  --surface: #ffffff;
+  --surface-muted: #f5f7f9;
+  --surface-raised: #ffffff;
+  --border: #e4e9ee;
+  --border-strong: #cfd8e0;
+  --foreground: #10202f;
+  --foreground-muted: #566573;
+  --foreground-subtle: #7c8b99;
+  --primary: #1c6b8f;
+  --primary-hover: #1a5674;
+  --primary-foreground: #ffffff;
+  --primary-soft: #eef7fb;
+  --accent: #128057;
+  --accent-soft: #eefbf3;
+  --ring: #2585ab;
+  /* Fiskbilderna är genererade mot vitt – denna platta ger dem ett neutralt hem. */
+  --fish-plate: linear-gradient(160deg, #ffffff 0%, #f2f6f8 100%);
+}
+
+/* Semantiska tokens – mörkt tema. Toner från djupt vatten, aldrig ren svart. */
+.dark {
+  --background: #061626;
+  --background-alt: #081f33;
+  --surface: #0d2639;
+  --surface-muted: #102c42;
+  --surface-raised: #133048;
+  --border: #1d3d56;
+  --border-strong: #2a5271;
+  --foreground: #e8f1f7;
+  --foreground-muted: #9db2c4;
+  --foreground-subtle: #7794a9;
+  --primary: #7cc3dd;
+  --primary-hover: #b0dcec;
+  --primary-foreground: #06202f;
+  --primary-soft: #0f3348;
+  --accent: #78d8ac;
+  --accent-soft: #0d3628;
+  --ring: #7cc3dd;
+  /* Ljus platta även i mörkt tema: fiskarna är ljusa motiv och behöver
+     kontrast mot bakgrunden, precis som plancherna i en tryckt fiskguide. */
+  --fish-plate: linear-gradient(160deg, #e9eff3 0%, #d7e2e9 100%);
+}
+
+/* Exponerar de semantiska värdena som Tailwind-klasser:
+   `bg-surface`, `text-foreground-muted`, `border-border` osv. */
+@theme inline {
+  --color-background: var(--background);
+  --color-background-alt: var(--background-alt);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-surface-raised: var(--surface-raised);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-foreground-subtle: var(--foreground-subtle);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-soft: var(--primary-soft);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-ring: var(--ring);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Färgar formulärkontroller och scrollbars rätt i respektive tema. */
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Tydlig, konsekvent fokusmarkering för tangentbordsnavigering. */
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Rubriker får något stramare teckenavstånd – ger ett premiumintryck. */
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  /* Latinska namn sätts genomgående i kursiv antikva, som i en tryckt fiskguide. */
+  .latin-name {
+    font-family: var(--font-serif);
+    font-style: italic;
+    letter-spacing: 0.01em;
+  }
+
+  /* Bakgrundsplattan bakom en fiskbild. */
+  .fish-plate {
+    background: var(--fish-plate);
+  }
+}
+
+@layer utilities {
+  /* Diskret inträde när innehåll dyker upp – används sparsamt. */
+  .animate-fade-up {
+    animation: fade-up 0.5s var(--ease-out-soft) both;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.4s var(--ease-out-soft) both;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Respekterar användare som valt bort rörelse i systeminställningarna. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

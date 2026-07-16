@@ -1,0 +1,64 @@
+{
+  "slug": "al",
+  "name": "Ål",
+  "latinName": "Anguilla anguilla",
+  "family": "Anguillidae",
+  "familyName": "Ålfiskar",
+  "type": "rovfisk",
+  "commonality": "ovanlig",
+  "popularity": 14,
+  "alsoKnownAs": ["Blankål", "Gulål", "Europeisk ål"],
+  "shortDescription": "Akut hotad och fredad. En gåtfull vandrare som föds i Sargassohavet, lever decennier i Östersjön – och återvänder för att leka och dö.",
+  "description": "Ålens liv är en av biologins största gåtor. Den föds i Sargassohavet på andra sidan Atlanten, driver som genomskinlig larv med Golfströmmen i uppemot tre år, förvandlas till glasål vid Europas kust och vandrar sedan upp i åar, sjöar och kustvatten. Där lever den som gulål i årtionden. När vandringslusten till slut kommer förvandlas den till blankål: ögonen växer, kroppen blir silverblank, matsmältningssystemet tillbakabildas – och den simmar tusentals kilometer tillbaka till Sargassohavet för att leka en enda gång och sedan dö. Ingen har någonsin sett en ål leka i det vilda. Beståndet har rasat med över 95 procent sedan 1980-talet. Vattenkraftverkens turbiner, utdikade våtmarker, parasiter och årtionden av fiske har tillsammans fört arten till randen av utrotning. Ålen är i dag klassad som akut hotad.",
+  "image": {
+    "src": "/images/fisk/al.webp",
+    "alt": "Ål i sidoprofil med lång ormliknande kropp, sammanhängande rygg- och stjärtfena och mörk rygg"
+  },
+  "size": {
+    "maxLengthCm": 130,
+    "maxWeightKg": 6,
+    "maxAgeYears": 50,
+    "typicalLengthCm": { "min": 40, "max": 80 }
+  },
+  "habitat": {
+    "environments": ["brackvatten", "sotvatten", "saltvatten"],
+    "distribution": "Hela Östersjön, samt uppströms i åar och sjöar. Har minskat dramatiskt i hela sitt utbredningsområde.",
+    "description": "Mjukbottnar, stenrös, vassbälten och hamnar. Nattaktiv och gömmer sig nedgrävd eller i skrevor under dagen.",
+    "typicalDepth": { "min": 1, "max": 20 }
+  },
+  "diet": ["Kräftdjur", "Havsborstmaskar", "Småfisk", "Insektslarver", "Fiskrom"],
+  "spawning": {
+    "period": "Leker i Sargassohavet – aldrig i Östersjön",
+    "months": [],
+    "description": "Blankålen vandrar tusentals kilometer till Sargassohavet, leker en enda gång och dör. Ynglen driver sedan tillbaka mot Europa med havsströmmarna i upp till tre år."
+  },
+  "bestTimeOfDay": "Natt – men allt riktat ålfiske är förbjudet",
+  "bestSeason": "Fiske efter ål är inte tillåtet",
+  "calendar": [
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low"
+  ],
+  "fishing": null,
+  "regulations": {
+    "protected": true,
+    "minSizeCm": null,
+    "maxSizeCm": null,
+    "bagLimit": 0,
+    "closedSeason": "Året runt – allt fiske efter ål är förbjudet",
+    "gearRestrictions": "Samtliga redskap. Ålen får inte fiskas med spö, nät, ryssja eller något annat redskap.",
+    "note": "Ålen är fredad i Sverige sedan 2007. Allt fiske efter ål är förbjudet för fritidsfiskare, och endast yrkesfiskare med särskilt tillstånd får fiska ål i vissa områden. Får du en ål som bifångst ska den omedelbart återutsättas så varsamt som möjligt.",
+    "source": "Havs- och vattenmyndigheten",
+    "updated": "2026-07-16"
+  },
+  "tip": "Krokar du en ål av misstag: klipp tafsen nära kroken i stället för att slita loss den, håll fisken i vattnet och låt den simma iväg. En enda ål som når Sargassohavet är värd mer än någon fångst."
+}

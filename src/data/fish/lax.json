@@ -1,0 +1,87 @@
+{
+  "slug": "lax",
+  "name": "Lax",
+  "latinName": "Salmo salar",
+  "family": "Salmonidae",
+  "familyName": "Laxfiskar",
+  "type": "laxfisk",
+  "commonality": "ganska-vanlig",
+  "popularity": 8,
+  "alsoKnownAs": ["Atlantlax", "Östersjölax", "Blanklax"],
+  "shortDescription": "Östersjöns mest imponerande vandringsfisk – växer sig stor på strömming och återvänder till älven där den kläcktes.",
+  "description": "Laxen lever ett dubbelliv. De första åren tillbringar den som liten strömfisk i en älv, för att sedan förvandlas till en silverblank havsfisk och vandra ut i Östersjön. Där följer den strömmingsstimmen i flera år och kan växa till över tjugo kilo, innan den vänder tillbaka till exakt samma älv den föddes i för att leka. Östersjölaxen är genetiskt egen och bestånden skiljer sig mellan älvarna – Torneälven, Kalixälven, Dalälven och Mörrumsån har alla sina egna stammar. Vildlaxen har haft det tufft: vattenkraftens dammar stängde ute laxen från många älvar, och en stor del av den lax som fångas i havet i dag är odlad och utsatt. Odlad lax känns igen på att fettfenan är bortklippt.",
+  "image": {
+    "src": "/images/fisk/lax.webp",
+    "alt": "Lax i sidoprofil med silverblank sida, x-formade fläckar ovanför sidolinjen och kraftig stjärtspole"
+  },
+  "size": {
+    "maxLengthCm": 150,
+    "maxWeightKg": 35,
+    "maxAgeYears": 13,
+    "typicalLengthCm": { "min": 60, "max": 90 }
+  },
+  "habitat": {
+    "environments": ["brackvatten", "saltvatten", "sotvatten"],
+    "distribution": "Hela Östersjön. Växer i den fria vattenmassan, framför allt i Egentliga Östersjön, och vandrar upp i älvar som Torneälven, Kalixälven, Dalälven och Mörrumsån för att leka.",
+    "description": "Lever pelagiskt i öppet hav där den följer strömmingsstimmen. Under lekvandringen söker den upp strömmande vatten med grusbottnar i älvarna.",
+    "typicalDepth": { "min": 0, "max": 40 }
+  },
+  "diet": ["Strömming", "Skarpsill", "Tobis"],
+  "spawning": {
+    "period": "September–december",
+    "months": [9, 10, 11, 12],
+    "description": "Gräver ner rommen i grusbottnar i strömmande älvvatten. Många laxar dör efter leken – de har då slutat äta i månader och tömt sina reserver på vandringen uppströms."
+  },
+  "bestTimeOfDay": "Dagtid vid trolling, gryning och kväll i älvarna",
+  "bestSeason": "Mars–juni till havs, maj–juli i älvarna",
+  "calendar": [
+    "good",
+    "good",
+    "best",
+    "best",
+    "best",
+    "best",
+    "good",
+    "low",
+    "low",
+    "low",
+    "low",
+    "good"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Trolling till havs med flera spön, utriggare och paravan eller downrigger för att sprida beten på olika djup och avstånd. I älvarna: kastfiske och flugfiske i strömmen.",
+      "lures": {
+        "jigs": ["Jigg används sällan till lax"],
+        "wobblers": ["Trollingwobbler 10–15 cm", "Djupgående wobbler i strömmingsmönster"],
+        "spinners": ["Spinnare 15–25 g i älv"],
+        "spoons": ["Trollingskeddrag", "Blänken bakom paravan", "Skeddrag 20–30 g i älv"]
+      },
+      "gear": "Trollingspö med multirulle, 0,30–0,35 mm lina och paravan eller downrigger för att nå rätt djup. I älv: kraftigt spinnspö 20–60 g eller enhandsfluga klass 8–10.",
+      "depth": { "min": 2, "max": 15 }
+    },
+    "bait": {
+      "baits": ["Strömming på betesfisksrigg vid trolling", "Räka i älvmynningar där det är tillåtet"],
+      "depth": { "min": 2, "max": 12 },
+      "tips": "Betesfiske efter lax är begränsat i många vatten och helt förbjudet i vissa älvar. Kontrollera reglerna för just det vattendrag du fiskar i."
+    },
+    "net": {
+      "meshSizeMm": { "min": 60, "max": 90 },
+      "depth": { "min": 5, "max": 20 },
+      "bestSeason": "Sommar, endast där det uttryckligen är tillåtet",
+      "tips": "Nätfiske efter lax är starkt reglerat och förbjudet för fritidsfiskare i stora delar av Östersjön. Vid åmynningar gäller nästan alltid totalförbud."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": 60,
+    "maxSizeCm": null,
+    "bagLimit": 1,
+    "closedSeason": "Fredningsområden och fredningstider gäller kring älvmynningar, framför allt under lekvandringen",
+    "gearRestrictions": "Kraftiga begränsningar för nät och fasta redskap i hela Östersjön.",
+    "note": "I delar av Östersjön får endast fettfeneklippt (odlad) lax behållas – vild lax med intakt fettfena ska återutsättas. Fångstbegränsningen är ofta en lax per fiskare och dygn. Reglerna ändras mellan år och områden.",
+    "source": "Havs- och vattenmyndigheten",
+    "updated": "2026-07-16"
+  },
+  "tip": "Titta efter fettfenan innan du bestämmer dig. Är den intakt är laxen vildfödd och ska i många områden tillbaka i vattnet – lyft aldrig fisken i gälarna när du ska släppa den."
+}

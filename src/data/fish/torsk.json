@@ -1,0 +1,87 @@
+{
+  "slug": "torsk",
+  "name": "Torsk",
+  "latinName": "Gadus morhua",
+  "family": "Gadidae",
+  "familyName": "Torskfiskar",
+  "type": "rovfisk",
+  "commonality": "ganska-vanlig",
+  "popularity": 6,
+  "alsoKnownAs": ["Kabeljo", "Östersjötorsk"],
+  "shortDescription": "En gång Östersjöns kungsfisk, i dag ett starkt trängt bestånd – känns igen på skäggtömmen och den vita sidolinjen.",
+  "description": "Torsken var länge Östersjöns viktigaste rovfisk och ryggraden i både yrkesfisket och kustsamhällena. I dag är östersjötorsken i djup kris. Beståndet i östra Östersjön har kollapsat: fiskarna blir könsmogna vid allt mindre storlek, växer långsamt och är ofta magra och parasitangripna. Orsakerna hänger ihop – syrefria bottnar krymper lekområdena, salthalten är för låg för att rommen ska flyta, sälar och skarv tär på beståndet och årtionden av hårt fiske har tagit ut de största individerna. Torsken känns igen på de tre ryggfenorna, skäggtömmen under hakan och den ljusa, böjda sidolinjen. Den behöver saltare vatten för att kunna föröka sig, vilket gör Bornholmsdjupet till artens sista viktiga lekplats i Östersjön.",
+  "image": {
+    "src": "/images/fisk/torsk.webp",
+    "alt": "Torsk i sidoprofil med tre ryggfenor, skäggtöm under hakan och ljus böjd sidolinje"
+  },
+  "size": {
+    "maxLengthCm": 120,
+    "maxWeightKg": 25,
+    "maxAgeYears": 20,
+    "typicalLengthCm": { "min": 30, "max": 55 }
+  },
+  "habitat": {
+    "environments": ["saltvatten", "brackvatten"],
+    "distribution": "Främst södra Östersjön kring Bornholmsdjupet, Hanöbukten och Öresund. Har i praktiken försvunnit från stora delar av sitt tidigare utbredningsområde längre norrut.",
+    "description": "Står över djupare hård- och blandbottnar, ofta vid kanter och vrak. Söker sig till saltare djupvatten, eftersom rommen behöver tillräcklig salthalt för att sväva.",
+    "typicalDepth": { "min": 20, "max": 80 }
+  },
+  "diet": ["Strömming", "Skarpsill", "Kräftdjur", "Havsborstmaskar", "Musslor"],
+  "spawning": {
+    "period": "Maj–juli",
+    "months": [5, 6, 7],
+    "description": "Leker i djupa bassänger där salthalten är hög nog att bära den svävande rommen. Syrebrist på djupet har gjort stora delar av de historiska lekområdena obrukbara."
+  },
+  "bestTimeOfDay": "Dagtid, ofta bäst kring strömskiften",
+  "bestSeason": "September–april där fiske är tillåtet",
+  "calendar": [
+    "good",
+    "low",
+    "low",
+    "good",
+    "low",
+    "low",
+    "low",
+    "low",
+    "good",
+    "good",
+    "good",
+    "good"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Pirkfiske och jiggfiske vertikalt från båt över djupare kanter och vrak. Låt betet nå botten och lyft det i lugna, långa ryck.",
+      "lures": {
+        "jigs": ["Gummifisk 15–25 cm på tung jiggskalle", "Beach-jigg 100–250 g"],
+        "wobblers": ["Djupgående wobbler vid trolling"],
+        "spinners": ["Används sällan till torsk"],
+        "spoons": ["Pirk 100–300 g", "Torskpirk i silver eller rött"]
+      },
+      "gear": "Kraftigt hav- eller pirkspö 100–300 g, flätlina 0,20–0,30 mm och kraftig tafs. Djup och ström avgör hur tungt betet måste vara.",
+      "depth": { "min": 15, "max": 60 }
+    },
+    "bait": {
+      "baits": ["Havsborstmask", "Sillbit", "Räka"],
+      "depth": { "min": 15, "max": 50 },
+      "tips": "Bottenmete med sillbit eller havsborstmask från båt fungerar där fisket är tillåtet. Använd tillräckligt med bly för att hålla kontakt med botten i strömmen."
+    },
+    "net": {
+      "meshSizeMm": { "min": 100, "max": 130 },
+      "depth": { "min": 20, "max": 60 },
+      "bestSeason": "Höst och vinter, där fiske över huvud taget är tillåtet",
+      "tips": "Nätfiske efter torsk är kraftigt begränsat i Östersjön och helt stoppat i flera områden. Kontrollera alltid vad som gäller innan du sätter redskap."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": 35,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": "Riktat fritidsfiske efter torsk är förbjudet i stora delar av Östersjön, och ytterligare fredningsperioder gäller där fiske tillåts",
+    "gearRestrictions": "Omfattande begränsningar för både redskap och områden.",
+    "note": "VIKTIGT: Östersjötorsken är starkt hotad. I östra Östersjön är riktat torskfiske stoppat, och i västra Östersjön gäller strikta fångstbegränsningar som ändras från år till år. Detta är ett av de områden där reglerna oftast uppdateras – kontrollera alltid aktuella bestämmelser innan du fiskar.",
+    "source": "Havs- och vattenmyndigheten",
+    "updated": "2026-07-16"
+  },
+  "tip": "Får du torsk som bifångst där riktat torskfiske inte är tillåtet ska den återutsättas omedelbart och så varsamt som möjligt. Håll fisken i vattnet och undvik att lyfta den i gälarna."
+}

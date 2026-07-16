@@ -1,0 +1,87 @@
+{
+  "slug": "stromming",
+  "name": "Strömming",
+  "latinName": "Clupea harengus membras",
+  "family": "Clupeidae",
+  "familyName": "Sillfiskar",
+  "type": "pelagisk",
+  "commonality": "vanlig",
+  "popularity": 4,
+  "alsoKnownAs": ["Östersjösill", "Bottenhavssill"],
+  "shortDescription": "Östersjöns viktigaste stimfisk och basen i hela ekosystemet – samma art som sillen, men mindre och magrare.",
+  "description": "Strömming och sill är samma art. Namnet byter helt enkelt vid Kalmarsund: norr om sundet heter fisken strömming, söder om det sill. Skillnaden är inte bara språklig – Östersjöns låga salthalt och magrare föda gör att strömmingen växer långsammare och blir betydligt mindre än sillen i Västerhavet. Strömmingen lever i stora stim i den fria vattenmassan och vandrar mellan djupare vatten och grunda kuster i takt med årstiderna. Den är själva navet i Östersjöns näringsväv: den äter djurplankton och blir i sin tur mat åt torsk, lax, havsöring, säl och sjöfågel. Strömmingsfiske från brygga eller båt med häckla är för många det första mötet med havsfiske.",
+  "image": {
+    "src": "/images/fisk/stromming.webp",
+    "alt": "Strömming i sidoprofil med silverblank sida, blågrön rygg och kluven stjärtfena"
+  },
+  "size": {
+    "maxLengthCm": 25,
+    "maxWeightKg": 0.12,
+    "maxAgeYears": 15,
+    "typicalLengthCm": { "min": 12, "max": 18 }
+  },
+  "habitat": {
+    "environments": ["brackvatten"],
+    "distribution": "Hela Östersjön norr om Kalmarsund, från Egentliga Östersjön upp till Bottenviken.",
+    "description": "Lever pelagiskt i stora stim i den fria vattenmassan. Står djupt om dagen och stiger mot ytan i skymningen. Söker sig in mot grunda hårdbottnar för att leka.",
+    "typicalDepth": { "min": 10, "max": 60 }
+  },
+  "diet": ["Djurplankton", "Pungräkor", "Fiskyngel"],
+  "spawning": {
+    "period": "Maj–juni (vårlekande bestånd)",
+    "months": [5, 6],
+    "description": "Leker på grunda hårdbottnar och i blåstångsbälten där den klibbiga rommen fäster på växter och sten. Det finns även höstlekande bestånd, men vårleken dominerar i Östersjön."
+  },
+  "bestTimeOfDay": "Skymning och kväll",
+  "bestSeason": "Maj–september",
+  "calendar": [
+    "low",
+    "low",
+    "low",
+    "good",
+    "best",
+    "best",
+    "good",
+    "best",
+    "best",
+    "good",
+    "low",
+    "low"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Häckling – ett rev med flera små, färgglada krokar som rycks upp och ner genom stimmet. Hittar du stimmet får du ofta flera strömmingar per drag.",
+      "lures": {
+        "jigs": ["Strömmingshäckla med 5–8 krokar", "Häckla med röda eller silverfärgade fjädrar"],
+        "wobblers": ["Används inte till strömming"],
+        "spinners": ["Används inte till strömming"],
+        "spoons": ["Litet pirkdrag som tyngd längst ner på häcklan"]
+      },
+      "gear": "Häckelspö eller ett enklare spinnspö med 20–60 g tyngd. Ekolod hjälper enormt – utan stim under båten händer ingenting.",
+      "depth": { "min": 5, "max": 25 }
+    },
+    "bait": {
+      "baits": ["Häckla med fjäder eller silvertråd", "Små bitar av räka på kroken"],
+      "depth": { "min": 5, "max": 20 },
+      "tips": "Strömmingen står ofta i ett tydligt skikt. Räkna ner häcklan och rycker du utan napp – prova en meter grundare eller djupare tills du hittar stimmet."
+    },
+    "net": {
+      "meshSizeMm": { "min": 24, "max": 30 },
+      "depth": { "min": 5, "max": 25 },
+      "bestSeason": "Vår och sensommar",
+      "tips": "Finmaskiga skötar sätts i stimmets djup. Vittja snabbt – strömming är en ömtålig fisk som förlorar kvalitet på bara några timmar."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": null,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": null,
+    "gearRestrictions": "Antalet redskap för fritidsfiske är begränsat, och i vissa kustområden finns särskilda regler för skötfiske.",
+    "note": "Strömmingsbestånden i Östersjön är hårt fiskade och kvoterna för yrkesfisket har sänkts flera gånger. Fritidsfiske efter strömming saknar minimimått men omfattas av redskapsbegränsningar.",
+    "source": "Havs- och vattenmyndigheten",
+    "updated": "2026-07-16"
+  },
+  "tip": "Leta efter måsar och tärnor som dyker – de står nästan alltid över ett strömmingsstim, och där finns ofta abborre, lax och havsöring i utkanten."
+}

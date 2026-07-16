@@ -1,0 +1,87 @@
+{
+  "slug": "gos",
+  "name": "Gös",
+  "latinName": "Sander lucioperca",
+  "family": "Percidae",
+  "familyName": "Abborrfiskar",
+  "type": "rovfisk",
+  "commonality": "vanlig",
+  "popularity": 3,
+  "alsoKnownAs": ["Gjuse", "Sandart"],
+  "shortDescription": "Skymningens jägare – en skygg rovfisk med kattögon som trivs i grumliga vikar och jagar när ljuset försvinner.",
+  "description": "Gösen är abborrens större och betydligt mer nattaktiva släkting. Ögat har ett reflekterande skikt som gör att den ser utmärkt i grumligt vatten och mörker, vilket är hela nyckeln till artens levnadssätt: när solen går ner och andra rovfiskar slutar jaga börjar gösen röra på sig. Den trivs bäst i näringsrika, grumliga vikar med mjuk botten och djupare hål att vila i under dagen. I Östersjön är gösen vanligast i södra och mellersta delarnas skärgårdar och grunda havsvikar, där sötvattenspåverkan från åar och älvar är stor. Köttet är vitt och fast, vilket gjort gösen till en av landets mest eftertraktade matfiskar.",
+  "image": {
+    "src": "/images/fisk/gos.webp",
+    "alt": "Gös i sidoprofil med långsträckt kropp, taggig ryggfena och stora reflekterande ögon"
+  },
+  "size": {
+    "maxLengthCm": 100,
+    "maxWeightKg": 15,
+    "maxAgeYears": 20,
+    "typicalLengthCm": { "min": 40, "max": 65 }
+  },
+  "habitat": {
+    "environments": ["brackvatten", "sotvatten"],
+    "distribution": "Södra och mellersta Östersjön, framför allt i grumliga havsvikar och skärgårdar med sötvattenpåverkan. Ovanlig norr om Stockholms skärgård.",
+    "description": "Grumligt vatten över mjuk- och hårdbottnar. Står djupt i hål och kanter under dagen och drar upp på grundare platåer för att jaga i skymningen.",
+    "typicalDepth": { "min": 3, "max": 15 }
+  },
+  "diet": ["Småfisk", "Nors", "Kräftdjur"],
+  "spawning": {
+    "period": "Maj–juni",
+    "months": [5, 6],
+    "description": "Leker på grunt vatten när temperaturen når 12–15 °C. Hanen bygger ett bo på hård botten eller rötter och vaktar romen tills ynglen kläcks."
+  },
+  "bestTimeOfDay": "Skymning och natt",
+  "bestSeason": "Juni–september",
+  "calendar": [
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "good",
+    "best",
+    "best",
+    "best",
+    "good",
+    "low",
+    "low"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Jiggfiske längs kanter och djuphål i skymningen, eller vertikalfiske från drivande båt rakt över stående fisk. Fiska långsamt och nära botten.",
+      "lures": {
+        "jigs": ["Gummifisk 10–15 cm", "Skruvjigg", "Gummifisk i vitt eller chartreuse för grumligt vatten"],
+        "wobblers": ["Djupgående wobbler 10–13 cm", "Trollingwobbler längs kanter"],
+        "spinners": ["Spinnare fungerar sällan – gösen föredrar mjukbeten nära botten"],
+        "spoons": ["Vertikalpirk 20–40 g"]
+      },
+      "gear": "Spinnspö 15–60 g med snabb aktion, flätlina 0,14–0,18 mm och en lång fluorocarbontafs på 0,30–0,35 mm. Tafsen är viktig: gösen har vassa tänder och är samtidigt skygg för grov lina.",
+      "depth": { "min": 4, "max": 12 }
+    },
+    "bait": {
+      "baits": ["Levande eller död betesfisk", "Nors", "Löja"],
+      "depth": { "min": 4, "max": 10 },
+      "tips": "Betesfisk på ett drivande takel längs kanten i skymningen är svårslaget. Gösen har hård käft – slå an bestämt och håll linan spänd."
+    },
+    "net": {
+      "meshSizeMm": { "min": 45, "max": 60 },
+      "depth": { "min": 5, "max": 15 },
+      "bestSeason": "Sommar, utanför lekperioden",
+      "tips": "Håll dig borta från lekbottnar i maj–juni. Hanen vaktar romen, och en fångad hane innebär att hela kullen går förlorad."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": 45,
+    "maxSizeCm": null,
+    "bagLimit": 3,
+    "closedSeason": "Fredningsområden med fiskeförbud under leken förekommer i många vikar",
+    "gearRestrictions": "Begränsningar för nät i grunda vikar och fredningsområden.",
+    "note": "Minimimått och fångstbegränsning för gös skiljer sig mellan områden och har skärpts under senare år. Kontrollera vad som gäller där du fiskar.",
+    "source": "Havs- och vattenmyndigheten",
+    "updated": "2026-07-16"
+  },
+  "tip": "Den sista timmen före mörkret är den bästa timmen för gös. Grumligt vatten och lite vind gör fisket bättre, inte sämre – då vågar gösen upp på grundare vatten."
+}

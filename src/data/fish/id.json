@@ -1,0 +1,87 @@
+{
+  "slug": "id",
+  "name": "Id",
+  "latinName": "Leuciscus idus",
+  "family": "Cyprinidae",
+  "familyName": "Karpfiskar",
+  "type": "fredfisk",
+  "commonality": "ganska-vanlig",
+  "popularity": 9,
+  "alsoKnownAs": ["Iden", "Vederbuk", "Guldid"],
+  "shortDescription": "En förvånansvärt stark karpfisk som både tar drag och fluga – kustens mest underskattade sportfisk.",
+  "description": "Iden ser vid första anblicken ut som en överdimensionerad mört, men den är en helt egen karaktär. Den blir betydligt större, har en kraftigare kropp, gula till orangeröda fenor och en påfallande vilja att jaga. Till skillnad från de flesta karpfiskar tar iden gärna både spinnare, små wobblers och torrfluga, vilket gör den till ett riktigt roligt sportfiske. I Östersjön håller den till i grunda, näringsrika vikar och samlas i stora stim vid åmynningar på våren när den vandrar upp i strömmande vatten för att leka. Iden är allätare: insekter, snäckor, kräftdjur, växtdelar och småfisk står alla på menyn. Den slåss hårt och länge – många som fastnar i en id på lätt spinnspö tror först att de har krokat något helt annat.",
+  "image": {
+    "src": "/images/fisk/id.webp",
+    "alt": "Id i sidoprofil med hög kraftig kropp, silverblanka fjäll och gulorange fenor"
+  },
+  "size": {
+    "maxLengthCm": 80,
+    "maxWeightKg": 6,
+    "maxAgeYears": 18,
+    "typicalLengthCm": { "min": 35, "max": 50 }
+  },
+  "habitat": {
+    "environments": ["brackvatten", "sotvatten"],
+    "distribution": "Grunda vikar och åmynningar längs stora delar av Östersjökusten, vanligast i mellersta och norra delarna samt i anslutning till större vattendrag.",
+    "description": "Näringsrika grunda vikar, hamnområden och åmynningar. Går upp i strömmande vatten under leken och samlas då i stora, lättfiskade stim.",
+    "typicalDepth": { "min": 1, "max": 6 }
+  },
+  "diet": ["Insekter", "Snäckor", "Kräftdjur", "Småfisk", "Växtdelar"],
+  "spawning": {
+    "period": "April–maj",
+    "months": [4, 5],
+    "description": "Vandrar upp i åar och bäckar och leker på grunda grus- och stenbottnar i strömmande vatten. Under leken samlas idarna i täta stim och blir tillfälligt mycket lätta att se."
+  },
+  "bestTimeOfDay": "Dagtid, ofta bäst i soligt väder",
+  "bestSeason": "April–september",
+  "calendar": [
+    "low",
+    "low",
+    "good",
+    "best",
+    "best",
+    "best",
+    "good",
+    "good",
+    "good",
+    "good",
+    "low",
+    "low"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Lätt spinnfiske med små spinnare eller wobblers i åmynningar och grunda vikar. Iden är nyfiken men skygg – långa kast och tunn tafs gör stor skillnad.",
+      "lures": {
+        "jigs": ["Mikrojigg 3–4 cm"],
+        "wobblers": ["Liten wobbler 3–6 cm"],
+        "spinners": ["Spinnare storlek 1–2", "Spinnare med koppar- eller guldblad"],
+        "spoons": ["Litet skeddrag 5–10 g"]
+      },
+      "gear": "Lätt spinnspö 3–15 g, monofillina 0,20 mm eller tunn flätlina med fluorocarbontafs 0,20–0,25 mm. Iden har mjuk mun – en spö med mjuk topp gör att du tappar färre fiskar.",
+      "depth": { "min": 0, "max": 4 }
+    },
+    "bait": {
+      "baits": ["Mask", "Majs", "Deg", "Bröd"],
+      "depth": { "min": 1, "max": 4 },
+      "tips": "Mete med majs eller deg under flöte i en hamn eller åmynning är både enkelt och mycket effektivt. Mata sparsamt och håll dig lågt – iden ser dig från långt håll."
+    },
+    "net": {
+      "meshSizeMm": { "min": 40, "max": 60 },
+      "depth": { "min": 2, "max": 6 },
+      "bestSeason": "Sommar, utanför lekperioden",
+      "tips": "Undvik nät i åmynningar under våren, då hela lekstim kan fastna på en gång. Iden är dessutom en betydligt roligare fisk på spö än i nät."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": null,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": null,
+    "gearRestrictions": "Fredningsområden vid åmynningar gäller under vår och höst i många län.",
+    "note": "Iden saknar generellt minimimått, men fredningsområden kring vattendrag omfattar allt fiske – även efter arter utan egna regler.",
+    "source": "Havs- och vattenmyndigheten",
+    "updated": "2026-07-16"
+  },
+  "tip": "Hittar du ett stim id som solar i ytan en varm vårdag – kasta aldrig rakt in i stimmet. Lägg betet i kanten och låt det sjunka långsamt, annars sprider sig hela stimmet."
+}

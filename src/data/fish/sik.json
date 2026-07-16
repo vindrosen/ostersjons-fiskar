@@ -1,0 +1,87 @@
+{
+  "slug": "sik",
+  "name": "Sik",
+  "latinName": "Coregonus lavaretus",
+  "family": "Salmonidae",
+  "familyName": "Laxfiskar",
+  "type": "laxfisk",
+  "commonality": "ganska-vanlig",
+  "popularity": 12,
+  "alsoKnownAs": ["Havssik", "Blåsik", "Coregonus maraena"],
+  "shortDescription": "Bottniska vikens silverfisk – en laxfisk med underställd mun som betar bottendjur på grunda rev.",
+  "description": "Siken är en laxfisk som valt en helt annan bana än sina jagande släktingar. Munnen sitter underställd och är byggd för att plocka bottendjur, musslor och märlkräftor från sten och grus snarare än för att jaga fisk. Den är silverblank, slank och har den lilla fettfenan som avslöjar familjetillhörigheten. I Östersjön är siken vanligast i Bottniska viken, där den betar på grunda stenrev och revkanter, ofta förvånansvärt nära land. Sikens taxonomi är notoriskt knivig – arten har delats upp, slagits ihop och döpts om flera gånger, och Östersjöns havssik kallas i vetenskapliga sammanhang numera ofta Coregonus maraena. För fiskaren är siken en läcker matfisk och ett riktigt finlirsfiske: den är skygg, har mjuk mun och kräver små beten och tunna tafsar.",
+  "image": {
+    "src": "/images/fisk/sik.webp",
+    "alt": "Sik i sidoprofil med slank silverblank kropp, underställd mun och liten fettfena"
+  },
+  "size": {
+    "maxLengthCm": 70,
+    "maxWeightKg": 5,
+    "maxAgeYears": 15,
+    "typicalLengthCm": { "min": 30, "max": 45 }
+  },
+  "habitat": {
+    "environments": ["brackvatten", "saltvatten", "sotvatten"],
+    "distribution": "Hela Östersjön men klart vanligast i Bottniska viken. Vissa bestånd vandrar upp i älvar för att leka, andra leker längs kusten.",
+    "description": "Grunda sten- och grusbottnar, rev och revkanter. Betar bottendjur och rör sig ofta i små stim längs kusten, gärna där vågorna river upp föda.",
+    "typicalDepth": { "min": 2, "max": 20 }
+  },
+  "diet": ["Märlkräftor", "Musslor", "Bottendjur", "Insektslarver", "Djurplankton"],
+  "spawning": {
+    "period": "Oktober–december",
+    "months": [10, 11, 12],
+    "description": "Leker på grunda grus- och stenbottnar sent på hösten, ofta i samband med de första riktiga höststormarna. Vissa bestånd vandrar upp i älvar, andra stannar vid kusten."
+  },
+  "bestTimeOfDay": "Gryning och skymning",
+  "bestSeason": "Augusti–november",
+  "calendar": [
+    "low",
+    "low",
+    "low",
+    "good",
+    "good",
+    "good",
+    "good",
+    "best",
+    "best",
+    "best",
+    "good",
+    "low"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Finlir med mycket små beten längs rev och stenbottnar, eller flugfiske med små nymfer och puppimitationer. Siken vägrar grova beten.",
+      "lures": {
+        "jigs": ["Mikrojigg 2–4 cm"],
+        "wobblers": ["Mycket liten wobbler 3–5 cm"],
+        "spinners": ["Spinnare storlek 0–2"],
+        "spoons": ["Litet blänke 4–8 g", "Sikdrag med enkelkrok"]
+      },
+      "gear": "Lätt spinnspö 2–12 g, tunn lina och fluorocarbontafs 0,18–0,22 mm. Siken har mjuk mun – mjuk spötopp och skonsam broms gör att du tappar färre fiskar.",
+      "depth": { "min": 1, "max": 8 }
+    },
+    "bait": {
+      "baits": ["Märlkräfta", "Mask", "Räka"],
+      "depth": { "min": 2, "max": 8 },
+      "tips": "Mete med märlkräfta eller mask längs ett rev fungerar bra, särskilt i lite sjögång när vågorna river loss föda ur bottnen. Använd liten krok och tunn tafs."
+    },
+    "net": {
+      "meshSizeMm": { "min": 35, "max": 45 },
+      "depth": { "min": 3, "max": 15 },
+      "bestSeason": "Sensommar och tidig höst",
+      "tips": "Siknät sätts längs rev och kanter. Undvik lekbottnarna sent på hösten – då står hela lekbeståndet samlat och blir extremt sårbart."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": null,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": "Fredningstider under hösten förekommer i vissa områden och älvar",
+    "gearRestrictions": "Fredningsområden vid älvmynningar gäller under lekvandringen.",
+    "note": "Sikens regler skiljer sig mellan län, och i Bottniska viken finns lokala fredningstider under hösten. Flera sikbestånd är svaga – kontrollera vad som gäller där du fiskar.",
+    "source": "Havs- och vattenmyndigheten",
+    "updated": "2026-07-16"
+  },
+  "tip": "Sik fiskas bäst i lite sjögång. Vågorna river loss märlkräftor och bottendjur ur stenbottnen, och då drar siken upp på riktigt grunt vatten för att beta."
+}

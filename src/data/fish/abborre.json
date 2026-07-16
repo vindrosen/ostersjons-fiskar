@@ -1,0 +1,87 @@
+{
+  "slug": "abborre",
+  "name": "Abborre",
+  "latinName": "Perca fluviatilis",
+  "family": "Percidae",
+  "familyName": "Abborrfiskar",
+  "type": "rovfisk",
+  "commonality": "vanlig",
+  "popularity": 1,
+  "alsoKnownAs": ["Aborre", "Randig", "Girig"],
+  "shortDescription": "Sveriges nationalfisk och Östersjöns mest utbredda rovfisk – lätt att känna igen på de mörka tvärbanden och den taggiga ryggfenan.",
+  "description": "Abborren är den fisk de flesta svenskar fångar först. Den trivs i nästan hela Östersjön, från vassvikar och bryggor till djupare stenrev, och saknas bara i de saltaste delarna längst söderut. Abborren jagar i flock: småabborrar sveper över grunda bottnar efter yngel och kräftdjur, medan de riktigt stora ensamvargarna står djupare vid kanter och rev. Den känns igen på de sex till nio mörka tvärbanden, den taggiga främre ryggfenan och de lysande orangeröda bukfenorna. Abborren växer långsamt – en kilosfisk är ofta över tio år gammal, vilket är värt att tänka på innan man tar upp den.",
+  "image": {
+    "src": "/images/fisk/abborre.webp",
+    "alt": "Abborre i sidoprofil med mörka tvärband, taggig ryggfena och orangeröda bukfenor"
+  },
+  "size": {
+    "maxLengthCm": 50,
+    "maxWeightKg": 3,
+    "maxAgeYears": 22,
+    "typicalLengthCm": { "min": 15, "max": 30 }
+  },
+  "habitat": {
+    "environments": ["brackvatten", "sotvatten"],
+    "distribution": "Hela Östersjön, vanligast i skärgårdar och grunda vikar. Går ända upp i Bottenviken men blir ovanligare i saltare vatten söderut.",
+    "description": "Håller till kring struktur: vassbälten, blåstång, stenbottnar, bryggor och vassa kanter. Stora abborrar söker sig till djupare rev och uddar, särskilt på hösten.",
+    "typicalDepth": { "min": 1, "max": 10 }
+  },
+  "diet": ["Småfisk", "Kräftdjur", "Insektslarver", "Fiskyngel", "Djurplankton"],
+  "spawning": {
+    "period": "April–maj",
+    "months": [4, 5],
+    "description": "Leker när vattnet når 7–10 °C. Romen läggs i långa, nätliknande band som draperas över vass, grenar och stenar på grunt vatten."
+  },
+  "bestTimeOfDay": "Gryning och skymning",
+  "bestSeason": "Juni–oktober, allra bäst i augusti–oktober",
+  "calendar": [
+    "low",
+    "low",
+    "low",
+    "low",
+    "good",
+    "good",
+    "good",
+    "best",
+    "best",
+    "best",
+    "good",
+    "low"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Lätt spinnfiske med jigg längs kanter, stenbottnar och vasskanter. Låt jiggen studsa längs botten – abborren hugger oftast när betet sjunker.",
+      "lures": {
+        "jigs": ["Gummifisk 5–8 cm", "Kräftimitation", "Mikrojigg 3–5 cm på lätt jiggskalle"],
+        "wobblers": ["Liten wobbler 4–7 cm", "Suspending wobbler i abborrmönster"],
+        "spinners": ["Spinnare storlek 1–3", "Spinnare med rött eller orange inslag"],
+        "spoons": ["Litet skeddrag 5–12 g"]
+      },
+      "gear": "Spinnspö 5–20 g, flätlina 0,10–0,14 mm och en fluorocarbontafs på 0,25 mm. Stållina behövs inte, men gäddan hugger ofta – räkna med enstaka avbitna beten.",
+      "depth": { "min": 1, "max": 8 }
+    },
+    "bait": {
+      "baits": ["Mask", "Liten betesfisk", "Räka"],
+      "depth": { "min": 2, "max": 6 },
+      "tips": "Flötmete med mask vid en brygga är det säkraste sättet att få abborre, och det perfekta nybörjarfisket. Fiska nära struktur och håll betet strax ovanför botten."
+    },
+    "net": {
+      "meshSizeMm": { "min": 30, "max": 45 },
+      "depth": { "min": 2, "max": 8 },
+      "bestSeason": "Sensommar och höst",
+      "tips": "Sätt näten längs kanter och rev, inte inne i lekvikarna. Vittja ofta – abborren trasslar lätt in sig och kvaliteten faller snabbt."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": null,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": null,
+    "gearRestrictions": "Många grunda vikar är fredningsområden under våren, där allt fiske är förbjudet under leken.",
+    "note": "Abborre saknar generellt minimimått i havet, men lokala fredningsområden och regler förekommer. Stora abborrar är gamla och viktiga för beståndet – överväg att återutsätta fisk över 35 cm.",
+    "source": "Havs- och vattenmyndigheten",
+    "updated": "2026-07-16"
+  },
+  "tip": "Hittar du en flock småabborre som jagar i ytan står de största fiskarna ofta strax under. Byt upp dig i betesstorlek i stället för att fortsätta fånga småfisken."
+}
