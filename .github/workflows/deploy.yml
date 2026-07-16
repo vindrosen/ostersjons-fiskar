@@ -40,7 +40,14 @@ jobs:
           cache: npm
 
       - name: Installera beroenden
-        run: npm ci
+        # --omit=optional hoppar över sharps plattformsbinärer.
+        #
+        # Två skäl. Dels behövs sharp bara av npm run images:optimize, som körs
+        # lokalt – bilderna ligger färdiga i public/ och bygget rör dem aldrig.
+        # Dels innehåller @img/sharp-wasm32 beroenden (@emnapi/*) som npm inte
+        # skriver till låsfilen när den genereras på Windows, vilket får npm ci
+        # att avbryta på en Linux-runner.
+        run: npm ci --omit=optional
 
       - name: Läs Pages-konfigurationen
         id: pages

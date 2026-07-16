@@ -26,6 +26,11 @@
  *
  * Originalen i assets/generated/ är masterfiler och ska sparas – de gör att
  * bilderna kan bearbetas om utan att kosta nya API-anrop.
+ *
+ * OBS: sharp ligger i optionalDependencies och installeras av `npm install`,
+ * men inte i CI (som kör `npm ci --omit=optional`). Skriptet är ett lokalt
+ * underhållsverktyg – bilderna det producerar är versionshanterade, så bygget
+ * behöver aldrig köra det. Se .github/workflows/deploy.yml.
  */
 
 import { mkdir, readdir, stat, writeFile } from "node:fs/promises";
