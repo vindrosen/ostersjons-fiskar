@@ -76,6 +76,12 @@ function assertValidFish(value: unknown, file: string): Fish {
   if (!fish.image?.src) fail("fältet 'image.src' saknas");
   if (typeof fish.popularity !== "number") fail("fältet 'popularity' måste vara ett tal");
 
+  // Utan 'origin' skulle en invasiv art tyst renderas som vilken inhemsk fisk
+  // som helst – utan varning om att den inte får återutsättas.
+  if (fish.origin !== "inhemsk" && fish.origin !== "invasiv") {
+    fail(`'origin' måste vara "inhemsk" eller "invasiv" (fick "${fish.origin}")`);
+  }
+
   // Kalendern ritas som exakt tolv rutor – fel längd ger tyst trasig layout.
   if (!Array.isArray(fish.calendar) || fish.calendar.length !== 12) {
     fail(`'calendar' måste innehålla exakt 12 värden (fick ${fish.calendar?.length ?? 0})`);
@@ -110,6 +116,7 @@ function toSummary(fish: Fish): FishSummary {
     family: fish.family,
     type: fish.type,
     commonality: fish.commonality,
+    origin: fish.origin,
     popularity: fish.popularity,
     alsoKnownAs: fish.alsoKnownAs,
     shortDescription: fish.shortDescription,
@@ -143,4 +150,19 @@ export async function getFishBySlug(slug: string): Promise<Fish | undefined> {
 /** Alla slugs – används av `generateStaticParams` för att förrendera sidorna. */
 export async function getAllFishSlugs(): Promise<string[]> {
   return loadFishFromDisk().map((fish) => fish.slug);
+}
+
+/**
+ * Invasiva främmande arter, i lättviktsformat.
+ *
+ * De lyfts fram i en egen sektion på startsidan: en läsare som bara scrollar
+ * förbi ska ändå få veta att arterna finns och att de inte får återutsättas.
+ */
+export async function getInvasiveFish(): Promise<FishSummary[]> {
+  return (await getFishSummaries()).filter((fish) => fish.origin === "invasiv");
+}
+
+/** Inhemska arter – guidens "vanliga arter". */
+export async function getNativeFish(): Promise<FishSummary[]> {
+  return (await getFishSummaries()).filter((fish) => fish.origin === "inhemsk");
 }

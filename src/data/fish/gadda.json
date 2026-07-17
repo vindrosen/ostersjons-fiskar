@@ -7,7 +7,11 @@
   "type": "rovfisk",
   "commonality": "vanlig",
   "popularity": 2,
-  "alsoKnownAs": ["Jädda", "Vassens vargar", "Hundfisk"],
+  "alsoKnownAs": [
+    "Jädda",
+    "Vassens vargar",
+    "Hundfisk"
+  ],
   "shortDescription": "Östersjöns kraftfullaste rovfisk – en tålmodig bakhållsjägare som trivs i vassrika grunda vikar.",
   "description": "Gäddan är en bakhållsjägare byggd för explosiv acceleration: långsmal kropp, bakåtskjutna fenor och ett käftparti fullt av tänder. Den ligger stilla i vassen eller vid en tångruska och väntar ut sitt byte i stället för att jaga långa sträckor. I Östersjön är gäddan en av de arter som klarar bräckt vatten bäst och den finns längs hela kusten, men den är helt beroende av grunda, vegetationsrika vikar och våtmarker för att kunna leka. Just därför har bestånden minskat i delar av skärgården där vikar har dikats ut, muddrats eller vuxit igen. De riktigt stora gäddorna är nästan alltid honor, och de är de viktigaste fiskarna för beståndets framtid.",
   "image": {
@@ -18,18 +22,36 @@
     "maxLengthCm": 150,
     "maxWeightKg": 25,
     "maxAgeYears": 20,
-    "typicalLengthCm": { "min": 50, "max": 90 }
+    "typicalLengthCm": {
+      "min": 50,
+      "max": 90
+    }
   },
   "habitat": {
-    "environments": ["brackvatten", "sotvatten"],
+    "environments": [
+      "brackvatten",
+      "sotvatten"
+    ],
     "distribution": "Hela Östersjön, insjöar och vikar. Klarar bräckt vatten hela vägen upp i Bottenviken, men leker alltid i sött eller mycket bräckt vatten.",
     "description": "Grunda vegetationsrika vikar, vassbälten, blåstångsbälten och kanter där den kan ligga i bakhåll. På sommaren söker sig större fiskar till svalare, djupare kanter.",
-    "typicalDepth": { "min": 0, "max": 6 }
+    "typicalDepth": {
+      "min": 0,
+      "max": 6
+    }
   },
-  "diet": ["Småfisk", "Kräftdjur", "Grodor", "Sjöfågelungar"],
+  "diet": [
+    "Småfisk",
+    "Kräftdjur",
+    "Grodor",
+    "Sjöfågelungar"
+  ],
   "spawning": {
     "period": "Mars–maj, som mest i april",
-    "months": [3, 4, 5],
+    "months": [
+      3,
+      4,
+      5
+    ],
     "description": "Vandrar in på mycket grunt vatten i vikar, våtmarker och åmynningar så snart isen släpper. Romen klibbar fast på fjolårsvegetation. Leken går tidigare i söder än i norr."
   },
   "bestTimeOfDay": "Gryning och skymning",
@@ -52,22 +74,52 @@
     "spinning": {
       "bestMethod": "Kasta jigg eller wobbler längs vasskanter, grynnor och tångbälten. Variera inhämtningen med tvära stopp – gäddan hugger nästan alltid i pausen.",
       "lures": {
-        "jigs": ["Gummifisk 12–20 cm", "Shad på jiggskalle 20–40 g", "Gummigroda över vegetation"],
-        "wobblers": ["Wobbler 10–15 cm", "Jerkbait", "Suspending wobbler för kallt vatten"],
-        "spinners": ["Spinnare storlek 4–5", "Spinnerbait i grumligt vatten"],
-        "spoons": ["Skeddrag 15–30 g", "Klassiskt silverdrag"]
+        "jigs": [
+          "Gummifisk 12–20 cm",
+          "Shad på jiggskalle 20–40 g",
+          "Gummigroda över vegetation"
+        ],
+        "wobblers": [
+          "Wobbler 10–15 cm",
+          "Jerkbait",
+          "Suspending wobbler för kallt vatten"
+        ],
+        "spinners": [
+          "Spinnare storlek 4–5",
+          "Spinnerbait i grumligt vatten"
+        ],
+        "spoons": [
+          "Skeddrag 15–30 g",
+          "Klassiskt silverdrag"
+        ]
       },
       "gear": "Spinnspö 20–80 g, flätlina 0,15–0,20 mm och alltid stål- eller tjock fluorocarbontafs – gäddans tänder klipper vanlig lina direkt. Ta med avbitartång och långt peang för säker krokloss.",
-      "depth": { "min": 0, "max": 5 }
+      "depth": {
+        "min": 0,
+        "max": 5
+      }
     },
     "bait": {
-      "baits": ["Levande eller död betesfisk", "Mört", "Strömming"],
-      "depth": { "min": 1, "max": 4 },
+      "baits": [
+        "Levande eller död betesfisk",
+        "Mört",
+        "Strömming"
+      ],
+      "depth": {
+        "min": 1,
+        "max": 4
+      },
       "tips": "Gäddmete med betesfisk under flöte längs en vasskant är klassiskt och effektivt. Slå an tidigt så att kroken fastnar i käftpartiet i stället för att sväljas."
     },
     "net": {
-      "meshSizeMm": { "min": 55, "max": 120 },
-      "depth": { "min": 2, "max": 6 },
+      "meshSizeMm": {
+        "min": 55,
+        "max": 120
+      },
+      "depth": {
+        "min": 2,
+        "max": 6
+      },
       "bestSeason": "Sensommar och höst, utanför leken",
       "tips": "Sätt aldrig nät inne i lekvikar under våren. Grova maskstorlekar fångar just de stora honor som beståndet behöver mest – överväg spöfiske i stället."
     }
@@ -77,11 +129,12 @@
     "minSizeCm": 40,
     "maxSizeCm": 75,
     "bagLimit": 3,
-    "closedSeason": "Fredningsområden i grunda vikar under leken, ofta 1 april–31 maj",
-    "gearRestrictions": "Nätfiske är förbjudet i många vikar och fredningsområden.",
-    "note": "I stora delar av Östersjön gäller ett så kallat fönsteruttag: gäddor under minimimåttet och över maxmåttet ska återutsättas. Reglerna skiljer sig kraftigt mellan län och områden.",
+    "closedSeason": "1 mars–31 maj inom Gotlands kustvatten, Kalmarsund och Öland. Fler fredningsområden finns längs ostkusten.",
+    "gearRestrictions": "Nätfiskeförbud gäller i många fredningsområden och delar av kusten.",
+    "note": "Storleksbegränsningen 40–75 cm gäller hela Östersjön utom Bottenviken: gäddor under 40 cm och över 75 cm ska återutsättas. Fångstbegränsningen på tre fiskar avser gädda och gös SAMMANLAGT per fiskare och dag vid fiske med handredskap och ryssjor, och gäller söder om gränsen mellan Västernorrlands och Västerbottens län.",
     "source": "Havs- och vattenmyndigheten",
-    "updated": "2026-07-16"
+    "updated": "2026-07-17"
   },
-  "tip": "Gäddan är mest aktiv vid gryning och skymning. Fiska grunt och nära vass, tång och kanter – och håll betet i rörelse med täta stopp."
+  "tip": "Gäddan är mest aktiv vid gryning och skymning. Fiska grunt och nära vass, tång och kanter – och håll betet i rörelse med täta stopp.",
+  "origin": "inhemsk"
 }

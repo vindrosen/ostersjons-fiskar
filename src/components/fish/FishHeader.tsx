@@ -4,7 +4,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, Ban } from "lucide-react";
+import { AlertTriangle, ArrowLeft, Ban } from "lucide-react";
 import { Badge } from "@/components/ui/Badge";
 import { COMMONALITY_LABELS, FISH_TYPE_LABELS } from "@/lib/labels";
 import type { Fish } from "@/types/fish";
@@ -34,7 +34,16 @@ export function FishHeader({ fish }: { fish: Fish }) {
             </p>
 
             <div className="mt-4 flex flex-wrap gap-2">
-              {fish.regulations.protected ? (
+              {/* Invasiv och fredad är de två etiketter som ändrar hur man ska
+                  agera på fisken – de tar därför platsen före "vanlig". */}
+              {fish.origin === "invasiv" ? (
+                <Badge
+                  tone="warning"
+                  icon={<AlertTriangle className="h-3.5 w-3.5" aria-hidden />}
+                >
+                  Invasiv art
+                </Badge>
+              ) : fish.regulations.protected ? (
                 <Badge tone="warning" icon={<Ban className="h-3.5 w-3.5" aria-hidden />}>
                   Fredad
                 </Badge>

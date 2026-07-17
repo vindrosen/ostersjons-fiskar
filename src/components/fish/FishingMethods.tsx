@@ -33,9 +33,12 @@ function MethodColumn({ title, icon, items, details, tip }: MethodColumnProps) {
       </h3>
 
       <ul className="mt-3 space-y-1.5">
-        {items.map((item) => (
+        {items.map((item, index) => (
           <li
-            key={item}
+            // Texten duger inte som nyckel: flera arter har samma formulering
+            // i flera betekategorier ("Fungerar inte på braxen"). Listan är
+            // statisk, så indexet är en stabil identitet här.
+            key={`${index}-${item}`}
             className="flex items-start gap-2 text-sm text-foreground-muted"
           >
             <span
@@ -71,14 +74,19 @@ interface FishingMethodsProps {
 export function FishingMethods({ fishing, fishName }: FishingMethodsProps) {
   const { spinning, bait, net } = fishing;
 
-  // Spöfiskekolumnen listar de beten som faktiskt är relevanta. Arter som inte
-  // tas på drag har en förklarande mening i stället för en lista med beten.
-  const lures = [
-    ...spinning.lures.jigs,
-    ...spinning.lures.wobblers,
-    ...spinning.lures.spinners,
-    ...spinning.lures.spoons,
-  ];
+  // Spöfiskekolumnen listar de beten som faktiskt är relevanta.
+  //
+  // Dubbletter tas bort: arter som inte tas på drag har samma mening i flera
+  // betekategorier, och att rada upp "Fungerar inte på braxen" fyra gånger
+  // säger inte mer än att göra det en gång.
+  const lures = Array.from(
+    new Set([
+      ...spinning.lures.jigs,
+      ...spinning.lures.wobblers,
+      ...spinning.lures.spinners,
+      ...spinning.lures.spoons,
+    ]),
+  );
 
   return (
     <Card as="section">

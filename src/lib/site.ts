@@ -56,11 +56,26 @@ export const NAV_LINKS = [
 /**
  * Brasklapp för fiskeregler.
  *
- * Reglerna i appen är exempeldata och skiljer sig mellan områden. Texten visas
- * överallt där regler presenteras – den ska aldrig kunna glömmas bort på en sida.
+ * Reglerna bygger på Havs- och vattenmyndighetens uppgifter, men är
+ * sammanfattade och förenklade: de nationella reglerna kompletteras överallt av
+ * lokala fredningsområden och länsvisa bestämmelser som guiden inte kan täcka.
+ * Texten visas överallt där regler presenteras – den ska aldrig kunna glömmas
+ * bort på en sida.
  */
 export const REGULATIONS_DISCLAIMER =
-  "Uppgifterna är vägledande exempeldata. Fiskeregler skiljer sig mellan områden och ändras över tid – kontrollera alltid aktuella regler hos Havs- och vattenmyndigheten och din länsstyrelse innan du fiskar.";
+  "Uppgifterna bygger på Havs- och vattenmyndighetens nationella regler och stämdes av i juli 2026, men de är sammanfattade. Lokala fredningsområden och länsvisa regler tillkommer, och bestämmelserna ändras över tid – kontrollera alltid vad som gäller där du ska fiska innan du ger dig ut.";
 
-/** Källa som reglerna hänvisar till. */
-export const REGULATIONS_SOURCE_URL = "https://www.havochvatten.se/fritidsfiske";
+/** Datum då reglerna senast stämdes av mot källan. Visas i gränssnittet. */
+export const REGULATIONS_CHECKED = "juli 2026";
+
+/** Myndighetens sida om fiskeregler för fritidsfiske. */
+export const REGULATIONS_SOURCE_URL =
+  "https://www.havochvatten.se/fiske-och-handel/regler-och-lagar/fiskeregler-for-fritidsfiske.html";
+
+/**
+ * Karttjänsten där lokala regler slås upp per område.
+ *
+ * Havs- och vattenmyndigheten hänvisar konsekvent hit för allt som beror på
+ * var man står, vilket är just det guidens sammanfattning inte kan svara på.
+ */
+export const REGULATIONS_LOCAL_URL = "https://www.svenskafiskeregler.se";

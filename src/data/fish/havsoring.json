@@ -7,7 +7,11 @@
   "type": "laxfisk",
   "commonality": "vanlig",
   "popularity": 7,
-  "alsoKnownAs": ["Öring", "Havsforell", "Kustöring"],
+  "alsoKnownAs": [
+    "Öring",
+    "Havsforell",
+    "Kustöring"
+  ],
   "shortDescription": "Kustfiskets stora dröm – en blank, explosiv laxfisk som går att fånga från land nästan hela året.",
   "description": "Havsöringen är samma art som bäcköringen och insjööringen; skillnaden är levnadssättet. Den vandrar ut från sin födelsebäck till havet, växer sig stor på strömming, storspigg och tobis, och återvänder sedan till samma vattendrag för att leka. Just därför är havsöringen så beroende av friska kustnära bäckar och åar – varje utdikat eller dämt vattendrag är en förlorad barnkammare. För sportfiskaren är havsöringen kustens mest älskade fisk: den kan fångas från stranden, den tar beten aggressivt och den slåss långt över sin viktklass. Blank fisk från havet är silverfärgad med svarta prickar. Lekfärgad fisk på hösten blir mörkare, brunaktig och ska alltid återutsättas.",
   "image": {
@@ -18,18 +22,39 @@
     "maxLengthCm": 120,
     "maxWeightKg": 15,
     "maxAgeYears": 15,
-    "typicalLengthCm": { "min": 40, "max": 65 }
+    "typicalLengthCm": {
+      "min": 40,
+      "max": 65
+    }
   },
   "habitat": {
-    "environments": ["brackvatten", "saltvatten", "sotvatten"],
+    "environments": [
+      "brackvatten",
+      "saltvatten",
+      "sotvatten"
+    ],
     "distribution": "Längs hela Östersjöns kust. Vandrar upp i åar och bäckar för att leka, och sprider sig sedan ut längs kusten för att växa.",
     "description": "Grunda kuststräckor med stenbottnar, blåstång, revlar och strömmande vatten. Söker föda på mycket grunt vatten, ofta bara någon meter från land.",
-    "typicalDepth": { "min": 0, "max": 5 }
+    "typicalDepth": {
+      "min": 0,
+      "max": 5
+    }
   },
-  "diet": ["Storspigg", "Tobis", "Strömming", "Märlkräftor", "Havsborstmaskar", "Räkor"],
+  "diet": [
+    "Storspigg",
+    "Tobis",
+    "Strömming",
+    "Märlkräftor",
+    "Havsborstmaskar",
+    "Räkor"
+  ],
   "spawning": {
     "period": "Oktober–december",
-    "months": [10, 11, 12],
+    "months": [
+      10,
+      11,
+      12
+    ],
     "description": "Vandrar upp i vattendrag och gräver ner rommen i grusbottnar i strömmande vatten. Till skillnad från laxen dör öringen inte efter leken utan kan vandra tillbaka till havet och leka flera gånger."
   },
   "bestTimeOfDay": "Gryning och förmiddag, vintertid mitt på dagen",
@@ -52,22 +77,49 @@
     "spinning": {
       "bestMethod": "Kustfiske från land med kustdrag längs grunda stenrev och blåstångsbälten. Gå längs stranden och kasta i solfjäder – rör dig hellre för mycket än för lite.",
       "lures": {
-        "jigs": ["Jigg används sällan på kusten"],
-        "wobblers": ["Kustwobbler 7–12 cm", "Suspending wobbler i kallt vatten"],
-        "spinners": ["Spinnare 10–18 g"],
-        "spoons": ["Kustdrag 12–24 g", "Spikdrag", "Tobisimitation i silver"]
+        "jigs": [
+          "Jigg används sällan på kusten"
+        ],
+        "wobblers": [
+          "Kustwobbler 7–12 cm",
+          "Suspending wobbler i kallt vatten"
+        ],
+        "spinners": [
+          "Spinnare 10–18 g"
+        ],
+        "spoons": [
+          "Kustdrag 12–24 g",
+          "Spikdrag",
+          "Tobisimitation i silver"
+        ]
       },
       "gear": "Kustspö 9–10 fot för 10–30 g, flätlina 0,12–0,15 mm och fluorocarbontafs 0,26–0,30 mm. Vadarbyxor och polaroider är nästan obligatoriskt – du behöver kunna se revlarna.",
-      "depth": { "min": 0, "max": 4 }
+      "depth": {
+        "min": 0,
+        "max": 4
+      }
     },
     "bait": {
-      "baits": ["Havsborstmask", "Räka", "Tobis"],
-      "depth": { "min": 1, "max": 4 },
+      "baits": [
+        "Havsborstmask",
+        "Räka",
+        "Tobis"
+      ],
+      "depth": {
+        "min": 1,
+        "max": 4
+      },
       "tips": "Mete med havsborstmask under flöte längs en rev fungerar när fisken är passiv och vägrar drag. Fiska grunt – öringen jagar ofta i vattenbrynet."
     },
     "net": {
-      "meshSizeMm": { "min": 50, "max": 70 },
-      "depth": { "min": 2, "max": 8 },
+      "meshSizeMm": {
+        "min": 50,
+        "max": 70
+      },
+      "depth": {
+        "min": 2,
+        "max": 8
+      },
       "bestSeason": "Sommar, långt från vattendragens mynningar",
       "tips": "Nätfiske efter öring är förbjudet nära åmynningar och i fredningsområden, särskilt under hösten när lekfisken samlas. Här gör spöfisket betydligt mindre skada."
     }
@@ -76,12 +128,13 @@
     "protected": false,
     "minSizeCm": 50,
     "maxSizeCm": null,
-    "bagLimit": 3,
-    "closedSeason": "Lekfärgad öring är fredad, i regel 1 oktober–31 mars i och i närheten av vattendrag",
-    "gearRestrictions": "Fredningsområden med fiskeförbud gäller kring de flesta åmynningar under hösten.",
-    "note": "Minimimått, fångstbegränsning och fredningsområden varierar mellan län. Lekfärgad (mörk, brunaktig) öring ska alltid återutsättas oavsett storlek.",
+    "bagLimit": 1,
+    "closedSeason": "Fredningstider varierar längs kusten. Fredningsområden gäller vid de flesta åmynningar, framför allt under hösten.",
+    "gearRestrictions": "Fiske med drivgarn är förbjudet i hela Östersjön.",
+    "note": "Minimimåttet 50 cm gäller Östersjöns samtliga delområden. Fångstbegränsningen är EN icke fettfeneklippt (vild) öring per fiskare och dygn vid fiske med handredskap och ryssjor, från Blekinge/Kalmar län upp till gränsen Västernorrland/Västerbotten. Lekfärgad öring ska återutsättas.",
     "source": "Havs- och vattenmyndigheten",
-    "updated": "2026-07-16"
+    "updated": "2026-07-17"
   },
-  "tip": "Havsöringen står ofta grundare än du tror. Kasta av de första metrarna innan du vadar ut – många fiskar skräms bort av vadaren som går rakt ut i vattnet."
+  "tip": "Havsöringen står ofta grundare än du tror. Kasta av de första metrarna innan du vadar ut – många fiskar skräms bort av vadaren som går rakt ut i vattnet.",
+  "origin": "inhemsk"
 }

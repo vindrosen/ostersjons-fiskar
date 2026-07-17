@@ -20,6 +20,7 @@ import { QuickFacts } from "@/components/fish/QuickFacts";
 import { FishingCalendar } from "@/components/fish/FishingCalendar";
 import { FishingMethods } from "@/components/fish/FishingMethods";
 import { ProtectedNotice } from "@/components/fish/ProtectedNotice";
+import { InvasiveNotice } from "@/components/fish/InvasiveNotice";
 import { RegulationsCard } from "@/components/fish/RegulationsCard";
 import { TipCard } from "@/components/fish/TipCard";
 import { getAllFishSlugs, getFishBySlug } from "@/lib/fish-repository";
@@ -132,6 +133,10 @@ export default async function FishPage({ params }: FishPageProps) {
       <div className="mx-auto grid max-w-7xl gap-6 px-4 py-10 sm:px-6 lg:grid-cols-[1fr_20rem] lg:gap-8 lg:px-8">
         {/* Huvudspalt */}
         <div className="space-y-6">
+          {/* Invasiva arter får sin varning överst – den ändrar hur läsaren ska
+              agera på fisken och får inte hamna långt ner på sidan. */}
+          {fish.origin === "invasiv" ? <InvasiveNotice fish={fish} /> : null}
+
           <Card as="section">
             <CardHeader
               title={`Om ${fish.name.toLowerCase()}`}

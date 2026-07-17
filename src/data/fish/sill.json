@@ -7,7 +7,10 @@
   "type": "pelagisk",
   "commonality": "vanlig",
   "popularity": 5,
-  "alsoKnownAs": ["Atlantsill", "Nordsjösill"],
+  "alsoKnownAs": [
+    "Atlantsill",
+    "Nordsjösill"
+  ],
   "shortDescription": "Samma art som strömmingen men större och fetare – namnet gäller söder om Kalmarsund, där salthalten är högre.",
   "description": "Sill och strömming är biologiskt samma art, Clupea harengus. Gränsen mellan namnen går vid Kalmarsund: söder om sundet, i Egentliga Östersjöns södra del, Öresund och Västerhavet, kallas fisken sill. Här är vattnet saltare och födan rikligare, vilket gör att sillen växer snabbare och blir både längre och betydligt fetare än strömmingen längre norrut. Sillen lever i väldiga stim och har i århundraden varit en av Nordens viktigaste matfiskar – sillperioderna i Bohuslän byggde hela samhällen. I Östersjön är sillen fortfarande en nyckelart som både föder torsken och konkurrerar med den om samma djurplankton.",
   "image": {
@@ -18,18 +21,36 @@
     "maxLengthCm": 40,
     "maxWeightKg": 0.8,
     "maxAgeYears": 20,
-    "typicalLengthCm": { "min": 20, "max": 30 }
+    "typicalLengthCm": {
+      "min": 20,
+      "max": 30
+    }
   },
   "habitat": {
-    "environments": ["saltvatten", "brackvatten"],
+    "environments": [
+      "saltvatten",
+      "brackvatten"
+    ],
     "distribution": "Södra Östersjön söder om Kalmarsund, samt Öresund, Bälten och Västerhavet.",
     "description": "Pelagisk stimfisk i den fria vattenmassan. Vandrar mellan djupare övervintringsområden och grundare lekbottnar, och följer djurplanktonens rörelser dygnet runt.",
-    "typicalDepth": { "min": 15, "max": 80 }
+    "typicalDepth": {
+      "min": 15,
+      "max": 80
+    }
   },
-  "diet": ["Djurplankton", "Pungräkor", "Fiskyngel", "Kräftdjurslarver"],
+  "diet": [
+    "Djurplankton",
+    "Pungräkor",
+    "Fiskyngel",
+    "Kräftdjurslarver"
+  ],
   "spawning": {
     "period": "Mars–maj samt höstlek i vissa bestånd",
-    "months": [3, 4, 5],
+    "months": [
+      3,
+      4,
+      5
+    ],
     "description": "Släpper klibbig rom som fastnar på grus, sten och tång. Olika bestånd leker vid olika årstider, vilket gör att det nästan alltid finns lekande sill någonstans i Nordsjön och Östersjön."
   },
   "bestTimeOfDay": "Skymning och kväll",
@@ -52,22 +73,46 @@
     "spinning": {
       "bestMethod": "Häckling från båt eller brygga över stim. Samma metod som för strömming, men med något större krokar eftersom fisken är grövre.",
       "lures": {
-        "jigs": ["Sillhäckla med 5–8 krokar", "Häckla med silvertråd eller röd fjäder"],
-        "wobblers": ["Används inte till sill"],
-        "spinners": ["Används inte till sill"],
-        "spoons": ["Pirk 40–80 g som tyngd under häcklan"]
+        "jigs": [
+          "Sillhäckla med 5–8 krokar",
+          "Häckla med silvertråd eller röd fjäder"
+        ],
+        "wobblers": [
+          "Används inte till sill"
+        ],
+        "spinners": [
+          "Används inte till sill"
+        ],
+        "spoons": [
+          "Pirk 40–80 g som tyngd under häcklan"
+        ]
       },
       "gear": "Häckelspö eller kraftigare spinnspö med 40–80 g tyngd. På djupare vatten behövs mer bly för att hålla häcklan lodrät i strömmen.",
-      "depth": { "min": 10, "max": 40 }
+      "depth": {
+        "min": 10,
+        "max": 40
+      }
     },
     "bait": {
-      "baits": ["Häckla med fjäder", "Räkbit på kroken"],
-      "depth": { "min": 10, "max": 35 },
+      "baits": [
+        "Häckla med fjäder",
+        "Räkbit på kroken"
+      ],
+      "depth": {
+        "min": 10,
+        "max": 35
+      },
       "tips": "Sillen står i tydliga skikt. Använd ekolod, räkna ner till rätt djup och ryck lugnt – för häftiga ryck river loss fisken ur den mjuka käften."
     },
     "net": {
-      "meshSizeMm": { "min": 28, "max": 36 },
-      "depth": { "min": 10, "max": 40 },
+      "meshSizeMm": {
+        "min": 28,
+        "max": 36
+      },
+      "depth": {
+        "min": 10,
+        "max": 40
+      },
       "bestSeason": "Vår och höst",
       "tips": "Skötar sätts i stimmets djup, ofta på kvällen. Sillen är fet och ömtålig – ta hand om fångsten direkt och kyl den snabbt."
     }
@@ -81,7 +126,8 @@
     "gearRestrictions": "Redskapsbegränsningar gäller för fritidsfiske, och lokala regler kan finnas i vissa fjärdar och sund.",
     "note": "Sillbestånden i Östersjön är hårt fiskade. Fritidsfisket saknar minimimått, men yrkesfisket styrs av kvoter som sänkts flera gånger under senare år.",
     "source": "Havs- och vattenmyndigheten",
-    "updated": "2026-07-16"
+    "updated": "2026-07-17"
   },
-  "tip": "Sill och strömming är samma art – skillnaden är var du står. Söder om Kalmarsund är det sill du drar upp, norr om det strömming."
+  "tip": "Sill och strömming är samma art – skillnaden är var du står. Söder om Kalmarsund är det sill du drar upp, norr om det strömming.",
+  "origin": "inhemsk"
 }

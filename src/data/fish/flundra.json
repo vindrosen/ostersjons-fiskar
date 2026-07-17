@@ -7,7 +7,11 @@
   "type": "plattfisk",
   "commonality": "vanlig",
   "popularity": 13,
-  "alsoKnownAs": ["Skrubbskädda", "Skrubba", "Skrubbflundra"],
+  "alsoKnownAs": [
+    "Skrubbskädda",
+    "Skrubba",
+    "Skrubbflundra"
+  ],
   "shortDescription": "Östersjöns vanligaste plattfisk – föds symmetrisk, lägger sig på sidan och låter ena ögat vandra över huvudet.",
   "description": "Flundran, eller skrubbskäddan som den egentligen heter, börjar livet som ett vanligt symmetriskt fiskyngel som simmar upprätt i den fria vattenmassan. Sedan sker en av naturens märkligaste förvandlingar: fisken lägger sig ner på ena sidan och det undre ögat vandrar långsamt över huvudet tills båda ögonen sitter på ovansidan. Ovansidan blir brunfläckig och kan ändra ton efter bottnen, medan undersidan förblir vit. Flundran gräver ner sig i sand och lera med bara ögonen ovanför och ligger i bakhåll efter musslor, havsborstmaskar och kräftdjur. Den är förvånansvärt tålig mot låg salthalt och finns längs hela Östersjökusten ända upp i Bottenhavet – men leken kräver saltare vatten eftersom rommen måste kunna sväva.",
   "image": {
@@ -18,18 +22,37 @@
     "maxLengthCm": 50,
     "maxWeightKg": 2.5,
     "maxAgeYears": 15,
-    "typicalLengthCm": { "min": 20, "max": 30 }
+    "typicalLengthCm": {
+      "min": 20,
+      "max": 30
+    }
   },
   "habitat": {
-    "environments": ["brackvatten", "saltvatten"],
+    "environments": [
+      "brackvatten",
+      "saltvatten"
+    ],
     "distribution": "Hela Östersjön upp till Bottenhavet och Ålands hav. Vanligast i södra och mellersta delarna, där salthalten är tillräcklig för leken.",
     "description": "Sand- och lerbottnar där den kan gräva ner sig. Går in på mycket grunt vatten under sommaren och drar ut på djupare vatten när det blir kallt.",
-    "typicalDepth": { "min": 2, "max": 40 }
+    "typicalDepth": {
+      "min": 2,
+      "max": 40
+    }
   },
-  "diet": ["Musslor", "Havsborstmaskar", "Kräftdjur", "Småfisk"],
+  "diet": [
+    "Musslor",
+    "Havsborstmaskar",
+    "Kräftdjur",
+    "Småfisk"
+  ],
   "spawning": {
     "period": "Februari–maj",
-    "months": [2, 3, 4, 5],
+    "months": [
+      2,
+      3,
+      4,
+      5
+    ],
     "description": "Leker på djupare vatten där salthalten är hög nog att bära den svävande rommen. Just detta gör att flundran inte kan föröka sig i de nordligaste, sötaste delarna av Östersjön."
   },
   "bestTimeOfDay": "Dagtid och skymning",
@@ -52,22 +75,47 @@
     "spinning": {
       "bestMethod": "Flundran tas sällan på drag. Den ligger nedgrävd och väntar – bottenmete med havsborstmask är den metod som fungerar.",
       "lures": {
-        "jigs": ["Liten jigg nära botten kan ge enstaka flundror"],
-        "wobblers": ["Fungerar dåligt på flundra"],
-        "spinners": ["Fungerar dåligt på flundra"],
-        "spoons": ["Blänke som lockbete ovanför betekroken på flundretakel"]
+        "jigs": [
+          "Liten jigg nära botten kan ge enstaka flundror"
+        ],
+        "wobblers": [
+          "Fungerar dåligt på flundra"
+        ],
+        "spinners": [
+          "Fungerar dåligt på flundra"
+        ],
+        "spoons": [
+          "Blänke som lockbete ovanför betekroken på flundretakel"
+        ]
       },
       "gear": "Bottenmetesspö eller lätt havsspö 40–120 g. Ett flundretakel med pärlor och blänke ovanför kroken lockar fisken till betet.",
-      "depth": { "min": 3, "max": 20 }
+      "depth": {
+        "min": 3,
+        "max": 20
+      }
     },
     "bait": {
-      "baits": ["Havsborstmask", "Räka", "Musselkött", "Sillbit"],
-      "depth": { "min": 3, "max": 15 },
+      "baits": [
+        "Havsborstmask",
+        "Räka",
+        "Musselkött",
+        "Sillbit"
+      ],
+      "depth": {
+        "min": 3,
+        "max": 15
+      },
       "tips": "Bottenmete med havsborstmask från brygga, pir eller båt är svårslaget. Låt betet ligga stilla en stund och dra sedan några meter – flundran hittar betet med lukten."
     },
     "net": {
-      "meshSizeMm": { "min": 60, "max": 80 },
-      "depth": { "min": 5, "max": 25 },
+      "meshSizeMm": {
+        "min": 60,
+        "max": 80
+      },
+      "depth": {
+        "min": 5,
+        "max": 25
+      },
       "bestSeason": "Sommar och tidig höst",
       "tips": "Flundrenät sätts på sand- och lerbottnar. Vittja regelbundet – plattfisk förlorar snabbt kvalitet i näten under varma perioder."
     }
@@ -78,10 +126,11 @@
     "maxSizeCm": null,
     "bagLimit": null,
     "closedSeason": null,
-    "gearRestrictions": "Redskapsbegränsningar för fritidsfiske gäller, och lokala regler kan finnas.",
-    "note": "Minimimåttet för flundra varierar mellan områden i Östersjön. Kontrollera vad som gäller på just din kuststräcka.",
+    "gearRestrictions": "Redskapsbegränsningar för fritidsfiske gäller.",
+    "note": "Minimimåttet varierar med delområde: 23 cm i delområde 22–25 (södra Östersjön), 21 cm i delområde 26–28 och 18 cm i delområde 29 och norrut. Artens officiella svenska namn är skrubbskädda.",
     "source": "Havs- och vattenmyndigheten",
-    "updated": "2026-07-16"
+    "updated": "2026-07-17"
   },
-  "tip": "Hittar du en sandbotten med små gropar i har flundrorna legat där. Släpa betet långsamt över bottnen i stället för att låta det ligga helt stilla."
+  "tip": "Hittar du en sandbotten med små gropar i har flundrorna legat där. Släpa betet långsamt över bottnen i stället för att låta det ligga helt stilla.",
+  "origin": "inhemsk"
 }

@@ -64,6 +64,13 @@
     1280,
     1297
   ],
+  "/images/fisk/puckellax.webp": [
+    256,
+    384,
+    640,
+    1280,
+    1363
+  ],
   "/images/fisk/sik.webp": [
     256,
     384,
@@ -84,6 +91,12 @@
     640,
     1280,
     1286
+  ],
+  "/images/fisk/svartmunnad-smorbult.webp": [
+    256,
+    384,
+    640,
+    1206
   ],
   "/images/fisk/torsk.webp": [
     256,

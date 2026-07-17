@@ -7,7 +7,10 @@
   "type": "fredfisk",
   "commonality": "vanlig",
   "popularity": 11,
-  "alsoKnownAs": ["Mörten", "Rödöga"],
+  "alsoKnownAs": [
+    "Mörten",
+    "Rödöga"
+  ],
   "shortDescription": "Barndomens första fisk och skärgårdens vanligaste – känns igen på det klarröda ögat.",
   "description": "Mörten är för många den allra första fisken på kroken, och den finns nästan överallt: i vassvikar, vid bryggor, i hamnar och längs hela Östersjökusten. Den känns lättast igen på det klarröda ögat och de rödaktiga bukfenorna – därav smeknamnet rödöga. Mörten lever i stim och är allätare med en tydlig dragning åt växtdelar, snäckor och insektslarver. Ekologiskt är den långt viktigare än sitt blygsamma rykte: mörten är basfödan för gädda, gös och abborre, och stora mörtstim är ett tecken på en välmående vik. I områden där rovfisken minskat kan mörten däremot bli så talrik att den betar ner vegetationen och grumlar vattnet – ett kvitto på att balansen i viken har rubbats.",
   "image": {
@@ -18,18 +21,35 @@
     "maxLengthCm": 45,
     "maxWeightKg": 1.5,
     "maxAgeYears": 15,
-    "typicalLengthCm": { "min": 12, "max": 25 }
+    "typicalLengthCm": {
+      "min": 12,
+      "max": 25
+    }
   },
   "habitat": {
-    "environments": ["brackvatten", "sotvatten"],
+    "environments": [
+      "brackvatten",
+      "sotvatten"
+    ],
     "distribution": "Hela Östersjön, från Öresund till Bottenviken. En av kustens absolut vanligaste fiskar.",
     "description": "Grunda vikar, vassbälten, bryggor och hamnar. Stimmen står ofta mitt i vegetationen där de har skydd mot gädda och abborre.",
-    "typicalDepth": { "min": 1, "max": 6 }
+    "typicalDepth": {
+      "min": 1,
+      "max": 6
+    }
   },
-  "diet": ["Växtdelar", "Snäckor", "Insektslarver", "Djurplankton"],
+  "diet": [
+    "Växtdelar",
+    "Snäckor",
+    "Insektslarver",
+    "Djurplankton"
+  ],
   "spawning": {
     "period": "April–maj",
-    "months": [4, 5],
+    "months": [
+      4,
+      5
+    ],
     "description": "Leker i stora stim på grunt vatten när temperaturen når 10–12 °C. Romen fastnar på vass och vattenväxter, och hanarna får en tydlig knottrig lekdräkt."
   },
   "bestTimeOfDay": "Dagtid",
@@ -52,22 +72,48 @@
     "spinning": {
       "bestMethod": "Mörten tar inte drag – den betar och sållar föda. Mete är metoden för den här arten.",
       "lures": {
-        "jigs": ["Fungerar inte på mört"],
-        "wobblers": ["Fungerar inte på mört"],
-        "spinners": ["Fungerar inte på mört"],
-        "spoons": ["Fungerar inte på mört"]
+        "jigs": [
+          "Fungerar inte på mört"
+        ],
+        "wobblers": [
+          "Fungerar inte på mört"
+        ],
+        "spinners": [
+          "Fungerar inte på mört"
+        ],
+        "spoons": [
+          "Fungerar inte på mört"
+        ]
       },
       "gear": "Drag är inte aktuellt för mört – se mete nedan.",
-      "depth": { "min": 1, "max": 5 }
+      "depth": {
+        "min": 1,
+        "max": 5
+      }
     },
     "bait": {
-      "baits": ["Mask", "Deg", "Bröd", "Majs", "Maggots"],
-      "depth": { "min": 1, "max": 4 },
+      "baits": [
+        "Mask",
+        "Deg",
+        "Bröd",
+        "Majs",
+        "Maggots"
+      ],
+      "depth": {
+        "min": 1,
+        "max": 4
+      },
       "tips": "Flötmete med en liten krok och en bit deg vid en brygga – enklare fiske finns inte, och det är svårslaget för att få barn att fastna för fiske. Håll betet strax över botten."
     },
     "net": {
-      "meshSizeMm": { "min": 24, "max": 35 },
-      "depth": { "min": 1, "max": 5 },
+      "meshSizeMm": {
+        "min": 24,
+        "max": 35
+      },
+      "depth": {
+        "min": 1,
+        "max": 5
+      },
       "bestSeason": "Sommar",
       "tips": "Finmaskiga nät i vikar fångar mört effektivt, men tänk på att de också fångar all annan småfisk. Undvik nät under leken på våren."
     }
@@ -81,7 +127,8 @@
     "gearRestrictions": "Fredningsområden i vikar omfattar allt fiske under lekperioden.",
     "note": "Mört saknar egna regler. Vill du använda mört som betesfisk får den inte flyttas mellan olika vatten – det sprider både sjukdomar och arter dit de inte hör hemma.",
     "source": "Havs- och vattenmyndigheten",
-    "updated": "2026-07-16"
+    "updated": "2026-07-17"
   },
-  "tip": "Mörten är gäddans och abborrens skafferi. Ser du stora mörtstim i en vik – då finns rovfisken där också, oftast i kanten av stimmet."
+  "tip": "Mörten är gäddans och abborrens skafferi. Ser du stora mörtstim i en vik – då finns rovfisken där också, oftast i kanten av stimmet.",
+  "origin": "inhemsk"
 }

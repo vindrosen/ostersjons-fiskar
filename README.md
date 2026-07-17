@@ -1,7 +1,8 @@
 # Östersjöns Fiskar
 
-En guide till de 14 vanligaste fiskarterna i Östersjön – deras liv, livsmiljöer,
-lekperioder och hur man fiskar dem ansvarsfullt.
+En guide till Östersjöns vanligaste fiskarter – deras liv, livsmiljöer,
+lekperioder och hur man fiskar dem ansvarsfullt – samt de invasiva arter som
+sprider sig i havet.
 
 Byggd med **Next.js 16 (App Router)**, **React 19**, **TypeScript** och
 **Tailwind CSS v4**. Alla sidor förrenderas statiskt vid build.
@@ -230,16 +231,36 @@ hade visat en kant.
 
 ## Om innehållet
 
-Artbeskrivningar, mått och fisketider är **realistisk exempeldata**. De speglar
-hur arterna faktiskt lever i Östersjön, men är inte hämtade ur någon officiell
-databas.
+**Fiskereglerna** är avstämda mot Havs- och vattenmyndigheten i juli 2026:
+minimimått, maxmått, fångstbegränsningar, fredningstider och fiskeförbud. Varje
+art bär `source` och `updated` så att uppgifterna går att spåra och åldras
+synligt.
 
-**Fiskereglerna är särskilt viktiga att dubbelkolla.** Minimimått,
-fångstbegränsningar och fredningstider skiljer sig mellan län och områden och
-ändras löpande. Uppgifterna i appen är vägledande exempel och visas alltid med en
-brasklapp och en länk till Havs- och vattenmyndigheten. Datamodellen har fält för
-`source` och `updated` just för att en framtida integration ska kunna leverera
-spårbara uppgifter.
+De är däremot **sammanfattade**. Guiden återger de nationella reglerna, medan
+lokala fredningsområden och länsvisa bestämmelser tillkommer nästan överallt –
+HaV hänvisar själv till svenskafiskeregler.se för allt som beror på var man står.
+Därför visas en brasklapp och en länk dit på varje regelkort. Reglerna ändras
+dessutom löpande; torskens och laxens har skärpts flera gånger de senaste åren.
+
+**Artbeskrivningarna** är skrivna för guiden och bygger på allmänt vedertagen
+kunskap om arterna, med HaV och SLU Artdatabanken som grund. Guiden är ingen
+vetenskaplig källa.
+
+**Guiden täcker inte alla arter i Östersjön** – bara de vanligaste och mest
+eftersökta, plus de invasiva. Bland dem som saknas finns skarpsill, nors, lake,
+siklöja, sarv, björkna, ruda, horngädda, tånglake, hornsimpa, rödspätta och
+piggvar. Att lägga till dem kräver bara en JSON-fil per art.
 
 Bilderna är AI-genererade illustrationer, inte fotografier, och ska inte användas
 för artbestämning i tveksamma fall.
+
+### Tre regler som är inbyggda i datamodellen
+
+Vissa arter kräver motsatt handling mot resten av guiden. Det är därför fält och
+inte formuleringar – gränssnittet ska inte kunna glömma bort dem:
+
+| Fält | Effekt |
+| --- | --- |
+| `regulations.protected` | Ålen är fredad → varningsruta i stället för fångstmetoder. |
+| `fishing: null` | Torsken får inte fiskas riktat i Östersjön → inga metoder, ingen kalender. |
+| `origin: "invasiv"` | Smörbult och puckellax → gul varning, "Invasiv"-märke på kortet, och beskedet att fisken ska avlivas och inte får återutsättas. |

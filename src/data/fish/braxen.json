@@ -7,7 +7,11 @@
   "type": "fredfisk",
   "commonality": "vanlig",
   "popularity": 10,
-  "alsoKnownAs": ["Braxe", "Brax", "Flire"],
+  "alsoKnownAs": [
+    "Braxe",
+    "Brax",
+    "Flire"
+  ],
   "shortDescription": "Vikarnas plogfisk – en högryggad karpfisk som betar mjukbottnar med utskjutbar mun.",
   "description": "Braxen är byggd för ett enda syfte: att beta botten. Kroppen är hög och kraftigt tillplattad från sidorna, och munnen kan skjutas ut som ett rör för att suga i sig fjädermygglarver, musslor och snäckor ur dyn. Ett stim betande braxnar plöjer bokstavligen upp bottnen och lämnar tydliga gropar efter sig – och grumlar upp vattnet ordentligt. Braxen blir gammal och stor: en riktigt grov braxen kan väga över fem kilo och vara tjugo år. I Östersjön hittar man den i grunda, näringsrika vikar med mjuk botten, gärna med sötvattenpåverkan. På våren är leken ett spektakel som hörs långt – braxnarna plaskar och slår i vassen i flera dygn.",
   "image": {
@@ -18,18 +22,36 @@
     "maxLengthCm": 82,
     "maxWeightKg": 9,
     "maxAgeYears": 20,
-    "typicalLengthCm": { "min": 30, "max": 50 }
+    "typicalLengthCm": {
+      "min": 30,
+      "max": 50
+    }
   },
   "habitat": {
-    "environments": ["brackvatten", "sotvatten"],
+    "environments": [
+      "brackvatten",
+      "sotvatten"
+    ],
     "distribution": "Grunda, näringsrika vikar i hela Östersjön, vanligast i södra och mellersta delarna samt i skärgårdar med sötvattenpåverkan.",
     "description": "Mjukbottnar i skyddade vikar och fjärdar. Stimmen rör sig i bestämda stråk mellan djupare viloplatser och grunda betesområden, ofta samma rutt varje dygn.",
-    "typicalDepth": { "min": 2, "max": 8 }
+    "typicalDepth": {
+      "min": 2,
+      "max": 8
+    }
   },
-  "diet": ["Fjädermygglarver", "Musslor", "Snäckor", "Bottendjur", "Växtdelar"],
+  "diet": [
+    "Fjädermygglarver",
+    "Musslor",
+    "Snäckor",
+    "Bottendjur",
+    "Växtdelar"
+  ],
   "spawning": {
     "period": "Maj–juni",
-    "months": [5, 6],
+    "months": [
+      5,
+      6
+    ],
     "description": "Leker bullrigt på grunt vatten i vass och vegetation när vattnet nått 15–18 °C. Leken pågår i flera dygn och hörs på långt håll när fiskarna slår i ytan."
   },
   "bestTimeOfDay": "Gryning och skymning, ofta även natt",
@@ -52,22 +74,48 @@
     "spinning": {
       "bestMethod": "Braxen tas i praktiken aldrig på drag – den betar botten och jagar inte. Vill du fånga braxen är mete rätt väg.",
       "lures": {
-        "jigs": ["Fungerar inte på braxen"],
-        "wobblers": ["Fungerar inte på braxen"],
-        "spinners": ["Fungerar inte på braxen"],
-        "spoons": ["Fungerar inte på braxen"]
+        "jigs": [
+          "Fungerar inte på braxen"
+        ],
+        "wobblers": [
+          "Fungerar inte på braxen"
+        ],
+        "spinners": [
+          "Fungerar inte på braxen"
+        ],
+        "spoons": [
+          "Fungerar inte på braxen"
+        ]
       },
       "gear": "Spöfiske med drag är inte aktuellt för den här arten – se mete nedan.",
-      "depth": { "min": 2, "max": 8 }
+      "depth": {
+        "min": 2,
+        "max": 8
+      }
     },
     "bait": {
-      "baits": ["Mask", "Majs", "Maggots", "Deg", "Bröd"],
-      "depth": { "min": 2, "max": 6 },
+      "baits": [
+        "Mask",
+        "Majs",
+        "Maggots",
+        "Deg",
+        "Bröd"
+      ],
+      "depth": {
+        "min": 2,
+        "max": 6
+      },
       "tips": "Bottenmete med mask eller majs, gärna med förmatning på samma plats i flera dagar. Braxen är försiktig: använd tunn tafs, liten krok och ge fisken tid att ta betet ordentligt."
     },
     "net": {
-      "meshSizeMm": { "min": 45, "max": 70 },
-      "depth": { "min": 2, "max": 8 },
+      "meshSizeMm": {
+        "min": 45,
+        "max": 70
+      },
+      "depth": {
+        "min": 2,
+        "max": 8
+      },
       "bestSeason": "Sensommar",
       "tips": "Sätt näten längs braxenstimmens stråk, inte i lekvikarna under våren. Braxen är slemmig och trasslar hårt – vittja ofta."
     }
@@ -81,7 +129,8 @@
     "gearRestrictions": "Fredningsområden i grunda vikar kan omfatta allt fiske under våren.",
     "note": "Braxen saknar generellt egna regler, men lokala fredningsområden gäller alla arter inom området.",
     "source": "Havs- och vattenmyndigheten",
-    "updated": "2026-07-16"
+    "updated": "2026-07-17"
   },
-  "tip": "Ser du grumliga moln och små bubbelstråk över en mjukbotten står braxnarna och betar precis där. Lägg betet i kanten av grumlingen och vänta ut dem."
+  "tip": "Ser du grumliga moln och små bubbelstråk över en mjukbotten står braxnarna och betar precis där. Lägg betet i kanten av grumlingen och vänta ut dem.",
+  "origin": "inhemsk"
 }

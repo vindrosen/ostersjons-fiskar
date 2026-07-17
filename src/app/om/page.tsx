@@ -11,7 +11,13 @@ import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { getFishSummaries } from "@/lib/fish-repository";
-import { REGULATIONS_SOURCE_URL, SITE, absoluteUrl } from "@/lib/site";
+import {
+  REGULATIONS_CHECKED,
+  REGULATIONS_LOCAL_URL,
+  REGULATIONS_SOURCE_URL,
+  SITE,
+  absoluteUrl,
+} from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Om guiden",
@@ -38,29 +44,66 @@ export default async function AboutPage() {
         <Card as="section" className="p-6">
           <h2 className="text-lg font-semibold text-foreground">Om uppgifterna</h2>
           <p className="mt-3 text-sm leading-relaxed text-foreground-muted">
-            Artbeskrivningarna, måtten och fisketiderna är sammanställda som
-            realistisk exempeldata för att visa hur guiden fungerar. De speglar
-            hur arterna faktiskt lever i Östersjön, men de är inte hämtade från
-            någon officiell databas och ska inte användas som vetenskaplig källa.
+            <strong className="font-semibold text-foreground">Fiskereglerna</strong>{" "}
+            – minimimått, maxmått, fångstbegränsningar och fredningstider – bygger
+            på Havs- och vattenmyndighetens uppgifter och stämdes av i{" "}
+            {REGULATIONS_CHECKED}. De är däremot sammanfattade: guiden återger de
+            nationella reglerna, medan lokala fredningsområden och länsvisa
+            bestämmelser tillkommer nästan överallt. Reglerna ändras dessutom
+            löpande – torskens och laxens har skärpts flera gånger de senaste åren.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-foreground-muted">
+            Slå därför alltid upp vad som gäller på just din plats innan du
+            fiskar. Havs- och vattenmyndigheten hänvisar själv till karttjänsten
+            svenskafiskeregler.se för allt som beror på var du står.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-foreground-muted">
             <strong className="font-semibold text-foreground">
-              Fiskereglerna är särskilt viktiga att dubbelkolla.
+              Artbeskrivningarna
             </strong>{" "}
-            Minimimått, fångstbegränsningar och fredningstider skiljer sig mellan
-            län och områden och ändras löpande. Uppgifterna i guiden är
-            vägledande exempel – aktuella regler hittar du alltid hos Havs- och
-            vattenmyndigheten och din länsstyrelse.
+            – utseende, levnadssätt, lekperioder och fisketider – är skrivna för
+            den här guiden och bygger på allmänt vedertagen kunskap om arterna,
+            med uppgifter från Havs- och vattenmyndigheten och SLU Artdatabanken
+            som grund. De är avsedda att ge en korrekt bild av hur fisken lever,
+            men guiden är inte en vetenskaplig källa.
           </p>
-          <a
-            href={REGULATIONS_SOURCE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors hover:text-primary-hover"
-          >
-            Havs- och vattenmyndigheten om fritidsfiske
-            <ExternalLink className="h-3.5 w-3.5" aria-hidden />
-          </a>
+          <div className="mt-4 flex flex-col gap-2">
+            <a
+              href={REGULATIONS_LOCAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors hover:text-primary-hover"
+            >
+              Slå upp lokala regler på svenskafiskeregler.se
+              <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+            </a>
+            <a
+              href={REGULATIONS_SOURCE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-sm text-foreground-muted transition-colors hover:text-primary"
+            >
+              Havs- och vattenmyndigheten om fritidsfiske
+              <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+            </a>
+          </div>
+        </Card>
+
+        <Card as="section" className="p-6">
+          <h2 className="text-lg font-semibold text-foreground">
+            Guiden innehåller inte alla arter
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-foreground-muted">
+            Östersjön hyser betydligt fler fiskarter än de {fish.length} som
+            finns här. Guiden tar upp de vanligaste och mest eftersökta arterna,
+            plus de invasiva arter som sprider sig i havet. Bland dem som ännu
+            saknas finns till exempel skarpsill, nors, lake, siklöja, sarv,
+            björkna, ruda, horngädda, tånglake, hornsimpa, rödspätta och piggvar.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-foreground-muted">
+            Guiden är byggd för att växa: varje art är en egen datafil, så listan
+            kan utökas utan att något annat behöver skrivas om.
+          </p>
         </Card>
 
         <Card as="section" className="p-6">
@@ -95,8 +138,13 @@ export default async function AboutPage() {
             </li>
             <li className="flex gap-2.5">
               <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-foreground-subtle" aria-hidden />
-              Ål är fredad. Torsken i Östersjön är starkt hotad och omfattas av
-              stränga begränsningar.
+              Ål är fredad, och riktat fritidsfiske efter torsk är förbjudet i
+              hela Östersjön sedan 2025.
+            </li>
+            <li className="flex gap-2.5">
+              <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-foreground-subtle" aria-hidden />
+              Invasiva arter är undantaget från allt detta: de ska avlivas och
+              får inte släppas tillbaka.
             </li>
           </ul>
         </Card>

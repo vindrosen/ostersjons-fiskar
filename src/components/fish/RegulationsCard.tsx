@@ -9,7 +9,11 @@
 import { ExternalLink, Scale } from "lucide-react";
 import { Card, CardBody, CardHeader } from "@/components/ui/Card";
 import { FactsTable, type Fact } from "./FactsTable";
-import { REGULATIONS_DISCLAIMER, REGULATIONS_SOURCE_URL } from "@/lib/site";
+import {
+  REGULATIONS_DISCLAIMER,
+  REGULATIONS_LOCAL_URL,
+  REGULATIONS_SOURCE_URL,
+} from "@/lib/site";
 import type { FishRegulations } from "@/types/fish";
 
 interface RegulationsCardProps {
@@ -69,15 +73,28 @@ export function RegulationsCard({ regulations }: RegulationsCardProps) {
           {REGULATIONS_DISCLAIMER}
         </p>
 
-        <a
-          href={REGULATIONS_SOURCE_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors hover:text-primary-hover"
-        >
-          Se aktuella regler hos {regulations.source}
-          <ExternalLink className="h-3.5 w-3.5" aria-hidden />
-        </a>
+        <div className="mt-4 flex flex-col gap-2">
+          {/* Den lokala karttjänsten först: det är den som svarar på frågan
+              "vad gäller just där jag står", vilket sammanfattningen inte kan. */}
+          <a
+            href={REGULATIONS_LOCAL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors hover:text-primary-hover"
+          >
+            Slå upp lokala regler på svenskafiskeregler.se
+            <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+          </a>
+          <a
+            href={REGULATIONS_SOURCE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-sm text-foreground-muted transition-colors hover:text-primary"
+          >
+            Källa: {regulations.source}
+            <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+          </a>
+        </div>
       </CardBody>
     </Card>
   );

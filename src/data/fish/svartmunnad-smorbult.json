@@ -1,0 +1,138 @@
+{
+  "slug": "svartmunnad-smorbult",
+  "name": "Svartmunnad smörbult",
+  "latinName": "Neogobius melanostomus",
+  "family": "Gobiidae",
+  "familyName": "Smörbultar",
+  "type": "rovfisk",
+  "commonality": "ganska-vanlig",
+  "origin": "invasiv",
+  "popularity": 15,
+  "alsoKnownAs": [
+    "Smörbult",
+    "Round goby",
+    "Svartmunnad smörbult"
+  ],
+  "shortDescription": "Invasiv främmande art som sprider sig snabbt i Östersjön. Fångad fisk ska avlivas och får inte återutsättas.",
+  "description": "Svartmunnad smörbult kom hit i barlastvattnet på fartyg och upptäcktes första gången i Sverige 2008, i Karlskrona skärgård. Sedan dess har den spridit sig längs kusten från Marstrand runt till Gävlebukten. Ursprungligen hör den hemma i det ponto-kaspiska området kring Svarta havet och Kaspiska havet. Den är en ovanligt framgångsrik invasionsart: den tål allt från −1 till +30 °C, klarar både sött och salt vatten, blir könsmogen tidigt och kan leka flera gånger per säsong medan hanen vaktar boet. Där den etablerar sig ökar bestånden explosionsartat – i provfisken vid Karlskrona fångades nio individer 2009 och 162 stycken 2015. Den är aggressivt revirhävdande, tränger undan inhemska bottenfiskar, betar ner musselbankar och äter andras rom och yngel. SLU klassar arten som mycket hög risk. Känns lättast igen på den svarta fläcken i bakkanten av den främre ryggfenan och på att bukfenorna är sammanvuxna till en sugskiva – den saknar dessutom simblåsa och ligger därför alltid på botten.",
+  "image": {
+    "src": "/images/fisk/svartmunnad-smorbult.webp",
+    "alt": "Svartmunnad smörbult i sidoprofil med fläckig gulgråbrun kropp, stort huvud och svart fläck i bakkanten av främre ryggfenan"
+  },
+  "size": {
+    "maxLengthCm": 25,
+    "maxWeightKg": 0.25,
+    "maxAgeYears": 5,
+    "typicalLengthCm": {
+      "min": 10,
+      "max": 17
+    }
+  },
+  "habitat": {
+    "environments": [
+      "brackvatten",
+      "sotvatten",
+      "saltvatten"
+    ],
+    "distribution": "Längs kusten från Marstrand runt till Gävlebukten. Väl etablerad i Karlskrona, Kalmarsund, Visby, Göteborg och Stockholms södra skärgård. Sprider sig fortfarande.",
+    "description": "Hårda bottnar, stenrös, pirar och hamnar där den hittar hålrum att gömma sig i. Står grunt under den varma delen av året och drar ut på djupare vatten för att övervintra.",
+    "typicalDepth": {
+      "min": 1,
+      "max": 20
+    }
+  },
+  "diet": [
+    "Musslor",
+    "Kräftdjur",
+    "Fiskrom",
+    "Fiskyngel",
+    "Havsborstmaskar"
+  ],
+  "spawning": {
+    "period": "Maj–augusti",
+    "months": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "description": "Leker upprepade gånger under samma säsong – upp till sex gånger. Hanen gräver ut ett bo under en sten och vaktar rommen aggressivt, vilket ger hög överlevnad för ynglen och är en viktig orsak till artens snabba spridning."
+  },
+  "bestTimeOfDay": "Dagtid",
+  "bestSeason": "Maj–oktober",
+  "calendar": [
+    "low",
+    "low",
+    "low",
+    "good",
+    "best",
+    "best",
+    "best",
+    "best",
+    "best",
+    "good",
+    "low",
+    "low"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Fiska nära botten vid pirar, stenbottnar och hamnar. Smörbulten är orädd och hugger villigt på nästan vad som helst som rör sig långsamt längs bottnen – den är ofta lättare att fånga än att undvika.",
+      "lures": {
+        "jigs": [
+          "Mikrojigg 2–4 cm på lätt jiggskalle"
+        ],
+        "wobblers": [
+          "Fungerar sällan – arten jagar inte i fria vattnet"
+        ],
+        "spinners": [
+          "Fungerar sällan – arten jagar inte i fria vattnet"
+        ],
+        "spoons": [
+          "Fungerar sällan – arten jagar inte i fria vattnet"
+        ]
+      },
+      "gear": "Mycket lätt spinnspö eller metspö. Arten är liten och kräver ingen grov utrustning – små krokar gör dessutom att inhemska arter som råkar hugga skadas mindre.",
+      "depth": {
+        "min": 1,
+        "max": 8
+      }
+    },
+    "bait": {
+      "baits": [
+        "Mask",
+        "Räka",
+        "Musselkött"
+      ],
+      "depth": {
+        "min": 1,
+        "max": 8
+      },
+      "tips": "Bottenmete med mask från en pir är den effektivaste metoden. Smörbulten är god matfisk trots sitt rykte – SLU driver projekt för att göra den invasiva arten till en resurs i stället för enbart ett problem."
+    },
+    "net": {
+      "meshSizeMm": {
+        "min": 20,
+        "max": 30
+      },
+      "depth": {
+        "min": 2,
+        "max": 15
+      },
+      "bestSeason": "Sommar",
+      "tips": "Nät är olämpligt för fritidsfiske efter smörbult: så finmaskiga nät fångar allt annat småfisk också. Mete är både enklare och mer selektivt."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "mustBeKilled": true,
+    "minSizeCm": null,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": null,
+    "gearRestrictions": "Inga särskilda begränsningar – arten omfattas inte av minimimått eller fångstbegränsning.",
+    "note": "Svartmunnad smörbult står på Sveriges nationella förteckning över invasiva främmande arter, som trädde i kraft 15 maj 2026. Det är förbjudet att sprida, transportera, sälja eller sätta ut arten i naturen. Fisk som fångas ska avlivas och får INTE släppas tillbaka i vattnet. Rapportera gärna fynd till Havs- och vattenmyndigheten eller via invasivaarter.nu – särskilt från områden där arten inte setts tidigare.",
+    "source": "Havs- och vattenmyndigheten och SLU Artdatabanken",
+    "updated": "2026-07-17"
+  },
+  "tip": "Kolla främre ryggfenan innan du släpper tillbaka något: en svart fläck i bakkanten avslöjar svartmunnad smörbult. Inhemska smörbultar saknar den. Är du osäker – jämför även bukfenorna, som hos alla smörbultar sitter ihop till en sugskiva."
+}

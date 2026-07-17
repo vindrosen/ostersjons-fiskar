@@ -1,0 +1,89 @@
+{
+  "slug": "puckellax",
+  "name": "Puckellax",
+  "latinName": "Oncorhynchus gorbuscha",
+  "family": "Salmonidae",
+  "familyName": "Laxfiskar",
+  "type": "laxfisk",
+  "commonality": "ovanlig",
+  "origin": "invasiv",
+  "popularity": 16,
+  "alsoKnownAs": ["Pink salmon", "Stillahavslax", "Rosa lax"],
+  "shortDescription": "Invasiv stillahavslax på väg västerut. Enstaka fynd i Östersjön – fångad fisk ska avlivas och rapporteras, inte återutsättas.",
+  "description": "Puckellaxen hör hemma i norra Stilla havet och Ishavet. Den sattes ut i den ryska delen av Ishavet mellan 1956 och 1975 för att skapa en fiskeresurs, och därifrån har den spridit sig västerut till Norge, Danmark, de brittiska öarna och Sverige. Det första svenska fyndet gjordes 1974 i Ljusnan, och redan 1976 hade den setts längs ostkusten från Medelpad till Uppland. Sedan 2017 sker lekförsök i västkustens åar, och det är där invasionsfronten står i dag – i vattendrag som mynnar i Östersjön har man ännu inte hittat något DNA från puckellax. Den är den minsta stillahavslaxen och har en ovanligt strikt tvåårig livscykel, vilket gör att bestånden går i tydliga udda- och jämnårsvågor. Lekmogna hanar är omisskännliga: de utvecklar en hög, kutryggig puckel och krokig käke. Puckellaxen dör efter leken, och de förmultnande fiskarna kan påverka vattenkvaliteten i små åar.",
+  "image": {
+    "src": "/images/fisk/puckellax.webp",
+    "alt": "Puckellax i sidoprofil med silverblank sida, stora svarta ovala fläckar på stjärtfenan och begynnande puckel på ryggen"
+  },
+  "size": {
+    "maxLengthCm": 75,
+    "maxWeightKg": 5,
+    "maxAgeYears": 2,
+    "typicalLengthCm": { "min": 40, "max": 55 }
+  },
+  "habitat": {
+    "environments": ["saltvatten", "brackvatten", "sotvatten"],
+    "distribution": "Främst västkusten och norska älvar, dit arten spridit sig från nordvästra Ryssland. Historiska fynd finns längs ostkusten från Medelpad till Uppland, men arten är ännu inte etablerad i vattendrag som mynnar i Östersjön.",
+    "description": "Lever pelagiskt i havet och vandrar upp i strömmande vattendrag för att leka. Till skillnad från vår lax stannar den bara ett till två år i havet innan den återvänder.",
+    "typicalDepth": { "min": 0, "max": 30 }
+  },
+  "diet": ["Djurplankton", "Kräftdjur", "Småfisk"],
+  "spawning": {
+    "period": "Juli–september",
+    "months": [7, 8, 9],
+    "description": "Vandrar upp i vattendrag på sensommaren och leker på grusbottnar. Alla vuxna fiskar dör efter leken. Den strikt tvååriga livscykeln gör att bestånden kommer i vågor vartannat år."
+  },
+  "bestTimeOfDay": "Dagtid",
+  "bestSeason": "Juli–september, när lekvandringen pågår",
+  "calendar": [
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "good",
+    "best",
+    "good",
+    "low",
+    "low",
+    "low"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Puckellax fiskas sällan riktat i Sverige – den fångas nästan alltid av misstag av den som fiskar lax eller havsöring. Den tar samma beten som våra egna laxfiskar.",
+      "lures": {
+        "jigs": ["Jigg används sällan"],
+        "wobblers": ["Wobbler 7–12 cm"],
+        "spinners": ["Spinnare 10–20 g"],
+        "spoons": ["Skeddrag 12–25 g"]
+      },
+      "gear": "Samma utrustning som för havsöring och lax: kustspö eller kraftigare spinnspö med fluorocarbontafs.",
+      "depth": { "min": 0, "max": 10 }
+    },
+    "bait": {
+      "baits": ["Räka", "Betesfisk"],
+      "depth": { "min": 0, "max": 8 },
+      "tips": "Betesfiske efter laxfisk är begränsat i många vatten. Får du en puckellax ska den avlivas – den får inte sättas tillbaka, oavsett hur du fångade den."
+    },
+    "net": {
+      "meshSizeMm": { "min": 60, "max": 90 },
+      "depth": { "min": 5, "max": 20 },
+      "bestSeason": "Nätfiske efter laxfisk är starkt reglerat och ofta förbjudet",
+      "tips": "Nätfiske efter lax och öring är förbjudet för fritidsfiskare i stora delar av Östersjön. Puckellax fångas i praktiken bara på spö."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "mustBeKilled": true,
+    "minSizeCm": null,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": null,
+    "gearRestrictions": "Reglerna för det fiske du bedriver gäller – i praktiken laxens och öringens regler.",
+    "note": "Puckellax står på Sveriges nationella förteckning över invasiva främmande arter, i kraft sedan 15 maj 2026. Det är förbjudet att föra in, hålla, transportera och sätta ut arten i naturen. Fångad puckellax ska avlivas direkt och får INTE kastas tillbaka i vattnet. SLU ber allmänheten rapportera alla fynd – varje rapport hjälper till att kartlägga hur långt arten spridit sig.",
+    "source": "Havs- och vattenmyndigheten och SLU Artdatabanken",
+    "updated": "2026-07-17"
+  },
+  "tip": "Lekmogna hanar är omöjliga att missa: hög puckel på ryggen och krokig käke. Blanka fiskar är svårare – leta efter stora, ovala svarta fläckar på BÅDA stjärtfenloberna, som vår lax och öring saknar. Är du osäker: fotografera fisken och rapportera fyndet."
+}

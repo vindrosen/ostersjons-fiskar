@@ -25,6 +25,17 @@ export type WaterEnvironment = "saltvatten" | "brackvatten" | "sotvatten";
 /** Hur vanlig arten är i Östersjön – styr badgen på detaljsidan. */
 export type Commonality = "vanlig" | "ganska-vanlig" | "ovanlig";
 
+/**
+ * Om arten hör hemma i Östersjön eller är införd.
+ *
+ * `"invasiv"` betyder att arten står på Sveriges nationella förteckning över
+ * invasiva främmande arter. För dem gäller motsatsen till allt annat i guiden:
+ * fångad fisk ska avlivas och får inte återutsättas. Därför är det ett fält i
+ * datamodellen och inte en formulering i en text – gränssnittet måste kunna
+ * visa varningen automatiskt för varje sådan art.
+ */
+export type FishOrigin = "inhemsk" | "invasiv";
+
 /** Ett djupintervall i meter. */
 export interface DepthRange {
   min: number;
@@ -129,6 +140,13 @@ export interface FishingMethods {
 export interface FishRegulations {
   /** true = arten är fredad, allt riktat fiske är förbjudet. */
   protected: boolean;
+  /**
+   * true = fångad fisk ska avlivas och får inte släppas tillbaka.
+   *
+   * Gäller invasiva arter. Att återutsätta dem är förbjudet enligt förordningen
+   * om invasiva främmande arter – motsatsen till huvudregeln i resten av guiden.
+   */
+  mustBeKilled?: boolean;
   minSizeCm: number | null;
   /** Maxmått (fönsteruttag) där sådant finns. */
   maxSizeCm: number | null;
@@ -155,6 +173,8 @@ export interface Fish {
   familyName: string;
   type: FishType;
   commonality: Commonality;
+  /** Inhemsk art eller invasiv främmande art. */
+  origin: FishOrigin;
   /** Lägre tal = vanligare/populärare. Styr ordningen på startsidan. */
   popularity: number;
   /** Alternativa namn, används för att bredda sökningen. */
@@ -194,6 +214,7 @@ export interface FishSummary {
   family: string;
   type: FishType;
   commonality: Commonality;
+  origin: FishOrigin;
   popularity: number;
   alsoKnownAs: string[];
   shortDescription: string;

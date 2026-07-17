@@ -7,6 +7,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { AlertTriangle } from "lucide-react";
 import type { FishSummary } from "@/types/fish";
 
 interface FishCardProps {
@@ -34,6 +35,16 @@ export function FishCard({ fish, priority = false }: FishCardProps) {
             sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
             className="object-contain p-3 transition-transform duration-500 ease-[var(--ease-out-soft)] group-hover:scale-[1.06]"
           />
+
+          {/* Invasiva arter märks redan i rutnätet. En läsare som bläddrar ska
+              inte behöva öppna sidan för att förstå att fisken inte får
+              återutsättas. */}
+          {fish.origin === "invasiv" ? (
+            <span className="absolute left-2 top-2 inline-flex items-center gap-1 rounded-full bg-amber-sea-500 px-2 py-0.5 text-[11px] font-semibold text-deep-950 shadow-sm">
+              <AlertTriangle className="h-3 w-3" aria-hidden />
+              Invasiv
+            </span>
+          ) : null}
         </div>
 
         <div className="border-t border-border px-4 py-3.5">
