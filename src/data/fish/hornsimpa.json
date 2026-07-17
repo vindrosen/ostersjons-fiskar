@@ -1,0 +1,88 @@
+{
+  "slug": "hornsimpa",
+  "name": "Hornsimpa",
+  "latinName": "Myoxocephalus quadricornis",
+  "family": "Cottidae",
+  "familyName": "Simpor",
+  "type": "rovfisk",
+  "commonality": "ovanlig",
+  "origin": "inhemsk",
+  "popularity": 24,
+  "alsoKnownAs": ["Fyrhornig simpa", "Storsimpa"],
+  "shortDescription": "Djupets istidsrelikt med fyra benknölar på huvudet – en kallvattensfisk från en tid då inlandsisen just dragit sig tillbaka.",
+  "description": "Hornsimpan är en levande rest från istiden. När inlandsisen smälte för runt tiotusen år sedan blev den kvar i det kalla djupvattnet, och den lever i dag som en så kallad ishavsrelikt i Östersjöns djupare, svalare delar. Namnet kommer av de fyra gulaktiga benknölarna på huvudet – som fyra små horn – som bräck- och saltvattensformerna bär. Kroppen är kraftig, framtill bred med ett stort, köttigt gap och avsmalnar bakåt, och färgen går i gråbrunt med mörkare fläckar. Hornsimpan är en bottenlevande lurpassare som ligger stilla och slukar det som kommer förbi: kräftdjur, småfisk och fiskrom. I Östersjön finns den från Bottenhavet ner till Öland, och den kräver kallt vatten – därför står den djupt och påträffas sällan av vanliga fritidsfiskare. Rommen läggs på sten eller växter och vaktas av en förälder.",
+  "image": {
+    "src": "/images/fisk/hornsimpa.webp",
+    "alt": "Hornsimpa i sidoprofil med brett taggigt huvud, benknölar på hjässan och gråbrun fläckig avsmalnande kropp"
+  },
+  "size": {
+    "maxLengthCm": 40,
+    "maxWeightKg": 0.7,
+    "maxAgeYears": 10,
+    "typicalLengthCm": { "min": 15, "max": 25 }
+  },
+  "habitat": {
+    "environments": ["brackvatten", "saltvatten"],
+    "distribution": "Östersjön från Bottenhavet ner till Öland, samt i vissa kalla, djupa sjöar i norr. En ishavsrelikt från istiden.",
+    "description": "Kallt, djupt vatten över mjuk- och blandbottnar. En bottenlevande lurpassare som står stilla och väntar ut sitt byte. Kräver låga temperaturer och håller sig därför på djupet.",
+    "typicalDepth": { "min": 10, "max": 90 }
+  },
+  "diet": ["Kräftdjur", "Småfisk", "Fiskrom", "Havsborstmaskar"],
+  "spawning": {
+    "period": "November–januari",
+    "months": [11, 12, 1],
+    "description": "Leker sent på hösten och vintern på djupare bottnar. Rommen läggs på sten eller växter och vaktas av en förälder tills ynglen kläcks. Just föräldravården är ovanlig och ökar ynglens överlevnad."
+  },
+  "bestTimeOfDay": "Dagtid – men arten fångas sällan riktat",
+  "bestSeason": "Höst och vinter",
+  "calendar": [
+    "good",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "good",
+    "good",
+    "good"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Hornsimpa fiskas i praktiken aldrig riktat. Den står djupt och tas nästan bara som bifångst vid pirk- eller bottenmete på djupt vatten.",
+      "lures": {
+        "jigs": ["Tung jigg på djupt vatten kan ge enstaka simpor"],
+        "wobblers": ["Fungerar inte på hornsimpa"],
+        "spinners": ["Fungerar inte på hornsimpa"],
+        "spoons": ["Pirk på djupt vatten"]
+      },
+      "gear": "Om hornsimpa tas är det på tyngre pirk- eller bottentackel på djupt vatten. Den är inte ett riktat sportfiske.",
+      "depth": { "min": 10, "max": 60 }
+    },
+    "bait": {
+      "baits": ["Havsborstmask", "Fiskbit", "Räka"],
+      "depth": { "min": 10, "max": 50 },
+      "tips": "Bottenmete med mask eller fiskbit på djupt, kallt vatten kan ge hornsimpa som bifångst. Hantera den försiktigt – de vassa taggarna på huvud och gällock kan riva upp händerna."
+    },
+    "net": {
+      "meshSizeMm": { "min": 30, "max": 45 },
+      "depth": { "min": 15, "max": 70 },
+      "bestSeason": "Höst och vinter",
+      "tips": "Hornsimpa fastnar ibland i djupt satta nät men är sällan målet. Akta dig för de vassa taggarna när du löser fisken ur nätet."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": null,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": null,
+    "gearRestrictions": "Lokala regler kan finnas i vissa områden.",
+    "note": "Hornsimpa saknar minimimått och fångstbegränsning i Östersjön. Som kallvattenslevande istidsrelikt är den känslig för uppvärmning och syrebrist på djupbottnarna – arten övervakas som en indikator på djupvattnets tillstånd.",
+    "source": "Havs- och vattenmyndigheten och SLU Artdatabanken",
+    "updated": "2026-07-17"
+  },
+  "tip": "Får du upp en bred, tagghövdad simpa från djupt vatten är det troligen en hornsimpa – känn efter de fyra benknölarna på hjässan. Ta i den försiktigt: taggarna på huvud och gällock är riktigt vassa."
+}

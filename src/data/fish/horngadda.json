@@ -1,0 +1,88 @@
+{
+  "slug": "horngadda",
+  "name": "Horngädda",
+  "latinName": "Belone belone",
+  "family": "Belonidae",
+  "familyName": "Näbbgäddefiskar",
+  "type": "rovfisk",
+  "commonality": "ovanlig",
+  "origin": "inhemsk",
+  "popularity": 22,
+  "alsoKnownAs": ["Näbbgädda", "Horngäl", "Grönbena"],
+  "shortDescription": "Vårens silverpil med gröna ben – en långsmal ytjägare som följer strömmingen in mot kusten i maj.",
+  "description": "Horngäddan är en av vårens säkraste tecken vid kusten. När vattnet värms upp i maj kommer den in mot land i stora stim, ofta strax efter strömmingen som den jagar. Den är omöjlig att förväxla med något annat: en lång, smal och silverblank kropp som en pil, med käkarna utdragna till ett långt, tandförsett näbb. Det märkligaste avslöjas dock först i stekpannan – horngäddans skelett är klart grönt, en effekt av färgämnet biliverdin. Det gröna är helt ofarligt, men det har genom åren skrämt bort mången ovan matgäst, trots att horngädda länge räknats som en delikatess, inte minst som soppa i Skåne. Horngäddan är en ytjägare som slår efter småfisk i de översta metrarna, och den är ett uppskattat och lekfullt sportfiske på lätt utrustning – den hoppar och slår i ytan när den krokas.",
+  "image": {
+    "src": "/images/fisk/horngadda.webp",
+    "alt": "Horngädda i sidoprofil med mycket långsmal silverblank kropp och långt näbbliknande käkparti"
+  },
+  "size": {
+    "maxLengthCm": 90,
+    "maxWeightKg": 1.3,
+    "maxAgeYears": 13,
+    "typicalLengthCm": { "min": 50, "max": 75 }
+  },
+  "habitat": {
+    "environments": ["saltvatten", "brackvatten"],
+    "distribution": "Kommer in mot kusten på våren och sommaren, längs hela Östersjökusten söderut och i Västerhavet. Övervintrar ute till havs.",
+    "description": "Ytjägare i öppet, kustnära vatten. Står högt i vattnet och jagar småfisk i de översta metrarna, ofta i stim och gärna där strömmingen samlas.",
+    "typicalDepth": { "min": 0, "max": 10 }
+  },
+  "diet": ["Småfisk", "Strömming", "Storspigg", "Tobis"],
+  "spawning": {
+    "period": "Maj–juni",
+    "months": [5, 6],
+    "description": "Leker på grunt kustvatten på försommaren, ofta bland tång och ålgräs där den klibbiga rommen fäster med långa trådar. Horngäddans ankomst i maj sammanfaller med leken och är ett tydligt vårtecken vid kusten."
+  },
+  "bestTimeOfDay": "Dagtid, ofta bäst i soligt väder",
+  "bestSeason": "Maj–juli",
+  "calendar": [
+    "low",
+    "low",
+    "low",
+    "good",
+    "best",
+    "best",
+    "good",
+    "good",
+    "low",
+    "low",
+    "low",
+    "low"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Lätt spinnfiske i ytan från strand eller båt när horngäddan kommit in. Den hugger aggressivt men har hårt näbb – ett tofsbete av garn som tänderna fastnar i fungerar ofta bättre än krok.",
+      "lures": {
+        "jigs": ["Liten jigg i ytan"],
+        "wobblers": ["Liten flytande wobbler"],
+        "spinners": ["Spinnare 5–15 g"],
+        "spoons": ["Litet blänke", "Kustdrag med garntofs i stället för krok"]
+      },
+      "gear": "Lätt spinnspö 5–20 g och tunn lina. Horngäddans näbb är hårt och svårkrokat – många använder en tofs av rött ullgarn bakom betet, som tänderna trasslar in sig i.",
+      "depth": { "min": 0, "max": 3 }
+    },
+    "bait": {
+      "baits": ["Strömmingsbit", "Räka", "Sillbit"],
+      "depth": { "min": 0, "max": 3 },
+      "tips": "Flötmete med en bit strömming högt i vattnet är effektivt när stimmen kommit in. Slå an sent – horngäddan behöver tid att få tag om betet med sitt smala näbb."
+    },
+    "net": {
+      "meshSizeMm": { "min": 40, "max": 60 },
+      "depth": { "min": 0, "max": 8 },
+      "bestSeason": "Vår och försommar",
+      "tips": "Horngädda fastnar lätt i strömmingsskötar på våren. Den är dock roligast på lätt spö i ytan – ett av kustens mest underhållande vårfisken."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": null,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": null,
+    "gearRestrictions": "Fredningsområden längs kusten kan omfatta allt fiske under vissa tider.",
+    "note": "Horngädda saknar minimimått och fångstbegränsning i Östersjön. Lokala fredningsområden gäller dock alla arter inom området.",
+    "source": "Havs- och vattenmyndigheten och SLU Artdatabanken",
+    "updated": "2026-07-17"
+  },
+  "tip": "Bli inte skrämd av det gröna skelettet – det kommer av ett ofarligt färgämne och horngädda är en delikatess. Fiska den i ytan när den kommit in i maj, gärna med en garntofs bakom betet så att det hårda näbbet fastnar."
+}

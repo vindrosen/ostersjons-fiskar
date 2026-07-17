@@ -1,0 +1,88 @@
+{
+  "slug": "skarpsill",
+  "name": "Skarpsill",
+  "latinName": "Sprattus sprattus",
+  "family": "Clupeidae",
+  "familyName": "Sillfiskar",
+  "type": "pelagisk",
+  "commonality": "ovanlig",
+  "origin": "inhemsk",
+  "popularity": 15,
+  "alsoKnownAs": ["Vassbuk", "Brisling", "Ansjovis"],
+  "shortDescription": "Östersjöns lilla stimfisk som säljs som ansjovis. Extremt talrik i havet men sällan något man fiskar med spö.",
+  "description": "Skarpsillen är en av Östersjöns absolut talrikaste fiskar, men de flesta möter den först på burk: sockersaltad och kryddinlagd skarpsill säljs i Norden under handelsnamnet ansjovis och är själva grunden i en Janssons frestelse – trots att den inte är släkt med den riktiga ansjovisen. Den är en liten silverblank släkting till sillen och strömmingen, med en tydlig köl av taggiga fjäll längs buken som skiljer den från strömmingsyngel. Skarpsillen lever i stora stim ute i den fria vattenmassan, stiger mot ytan på natten och står djupare på dagen. Tillsammans med strömmingen är den den viktigaste bytesfisken i havet – torsk, lax, havsöring och sjöfågel lever till stor del på skarpsill. Just därför är balansen mellan skarpsill, strömming och torsk en av de mest studerade frågorna i hela Östersjöns ekologi.",
+  "image": {
+    "src": "/images/fisk/skarpsill.webp",
+    "alt": "Skarpsill i sidoprofil med silverblank sida, blågrön rygg och taggig köl längs buken"
+  },
+  "size": {
+    "maxLengthCm": 18,
+    "maxWeightKg": 0.05,
+    "maxAgeYears": 6,
+    "typicalLengthCm": { "min": 9, "max": 14 }
+  },
+  "habitat": {
+    "environments": ["brackvatten", "saltvatten"],
+    "distribution": "Hela Östersjön och ända upp i Bottenviken, samt Kattegatt och Skagerrak. En av havets talrikaste arter.",
+    "description": "Pelagisk stimfisk i öppet vatten. Stiger mot ytan nattetid och står närmare botten om dagen. Rör sig i väldiga stim som följer djurplanktonens vandringar.",
+    "typicalDepth": { "min": 10, "max": 40 }
+  },
+  "diet": ["Djurplankton", "Hoppkräftor", "Fisklarver"],
+  "spawning": {
+    "period": "Mars–augusti",
+    "months": [3, 4, 5, 6, 7, 8],
+    "description": "Leker ute till havs eller intill kusten på 10–40 meters djup, med flytande rom i den fria vattenmassan. Leken är utdragen över hela våren och sommaren, och fisken blir könsmogen redan vid ett till tre års ålder."
+  },
+  "bestTimeOfDay": "Skymning och natt",
+  "bestSeason": "Maj–september",
+  "calendar": [
+    "low",
+    "low",
+    "low",
+    "good",
+    "best",
+    "best",
+    "good",
+    "best",
+    "good",
+    "good",
+    "low",
+    "low"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Skarpsill fiskas med häckla över stim, precis som strömming. Den fångas ofta blandad med strömming och är svår att rikta in sig på – hittar du stimmet får du det som nappar.",
+      "lures": {
+        "jigs": ["Finmaskig häckla med små krokar"],
+        "wobblers": ["Fungerar inte på skarpsill"],
+        "spinners": ["Fungerar inte på skarpsill"],
+        "spoons": ["Litet pirkdrag som tyngd under häcklan"]
+      },
+      "gear": "Häckelspö eller lätt spinnspö med 20–40 g tyngd. Ekolod hjälper – utan stim under båten händer ingenting.",
+      "depth": { "min": 5, "max": 30 }
+    },
+    "bait": {
+      "baits": ["Häckla med fjäder", "Liten bit räka på kroken"],
+      "depth": { "min": 5, "max": 25 },
+      "tips": "Skarpsillen står i tydliga skikt. Räkna ner häcklan tills du hittar rätt djup och ryck lugnt – den lilla fisken river lätt loss ur den mjuka käften."
+    },
+    "net": {
+      "meshSizeMm": { "min": 20, "max": 28 },
+      "depth": { "min": 5, "max": 30 },
+      "bestSeason": "Vår och sensommar",
+      "tips": "Mycket finmaskiga skötar krävs och fångar allt annat småfisk också. Skarpsill är dessutom ömtålig – ta hand om fångsten direkt och kyl den snabbt."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": null,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": null,
+    "gearRestrictions": "Redskapsbegränsningar gäller för fritidsfiske.",
+    "note": "Skarpsill saknar minimimått och fångstbegränsning för fritidsfiske i Östersjön, men omfattas av de allmänna redskapsbegränsningarna. Yrkesfisket styrs av kvoter, eftersom skarpsill och strömming ofta fiskas tillsammans.",
+    "source": "Havs- och vattenmyndigheten och SLU Artdatabanken",
+    "updated": "2026-07-17"
+  },
+  "tip": "Ser du täta stim på ekolodet en sommarkväll är det ofta skarpsill – och där finns rovfisken i utkanten. Skarpsillen är sällan målet i sig, men den visar var torsken, laxen och havsöringen jagar."
+}

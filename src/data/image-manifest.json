@@ -12,6 +12,13 @@
     1280,
     1323
   ],
+  "/images/fisk/bjorkna.webp": [
+    256,
+    384,
+    640,
+    1280,
+    1290
+  ],
   "/images/fisk/braxen.webp": [
     256,
     384,
@@ -44,11 +51,31 @@
     1280,
     1400
   ],
+  "/images/fisk/horngadda.webp": [
+    256,
+    384,
+    640,
+    1280,
+    1400
+  ],
+  "/images/fisk/hornsimpa.webp": [
+    256,
+    384,
+    640,
+    1256
+  ],
   "/images/fisk/id.webp": [
     256,
     384,
     640,
     1247
+  ],
+  "/images/fisk/lake.webp": [
+    256,
+    384,
+    640,
+    1280,
+    1369
   ],
   "/images/fisk/lax.webp": [
     256,
@@ -64,12 +91,45 @@
     1280,
     1297
   ],
+  "/images/fisk/nors.webp": [
+    256,
+    384,
+    640,
+    1280,
+    1348
+  ],
+  "/images/fisk/piggvar.webp": [
+    256,
+    384,
+    640,
+    1248
+  ],
   "/images/fisk/puckellax.webp": [
     256,
     384,
     640,
     1280,
     1363
+  ],
+  "/images/fisk/rodspatta.webp": [
+    256,
+    384,
+    640,
+    1280,
+    1362
+  ],
+  "/images/fisk/ruda.webp": [
+    256,
+    384,
+    640,
+    1280,
+    1284
+  ],
+  "/images/fisk/sarv.webp": [
+    256,
+    384,
+    640,
+    1231
   ],
   "/images/fisk/sik.webp": [
     256,
@@ -78,12 +138,25 @@
     1280,
     1374
   ],
+  "/images/fisk/sikloja.webp": [
+    256,
+    384,
+    640,
+    1280,
+    1282
+  ],
   "/images/fisk/sill.webp": [
     256,
     384,
     640,
     1280,
     1377
+  ],
+  "/images/fisk/skarpsill.webp": [
+    256,
+    384,
+    640,
+    1274
   ],
   "/images/fisk/stromming.webp": [
     256,
@@ -97,6 +170,13 @@
     384,
     640,
     1206
+  ],
+  "/images/fisk/tanglake.webp": [
+    256,
+    384,
+    640,
+    1280,
+    1296
   ],
   "/images/fisk/torsk.webp": [
     256,

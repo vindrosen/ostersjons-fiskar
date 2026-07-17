@@ -1,0 +1,88 @@
+{
+  "slug": "ruda",
+  "name": "Ruda",
+  "latinName": "Carassius carassius",
+  "family": "Cyprinidae",
+  "familyName": "Karpfiskar",
+  "type": "fredfisk",
+  "commonality": "ovanlig",
+  "origin": "inhemsk",
+  "popularity": 21,
+  "alsoKnownAs": ["Rudan", "Dammruda"],
+  "shortDescription": "Segast av alla – en rundryggig karpfisk som överlever i syrefattiga dammar där ingen annan fisk klarar sig.",
+  "description": "Ruda är fiskvärldens överlevare. Den klarar förhållanden som tar livet av nästan alla andra fiskar: syrefattiga, igenväxta dammar, uttorkande gölar och vatten som bottenfryser på vintern. En ruda kan sänka sin ämnesomsättning dramatiskt och till och med klara sig långa perioder nästan helt utan syre, vilket gör att den ofta är den enda fisken i små, isolerade vatten. Den är rundryggig och högryggad med en trubbig nos utan skäggtömmar – vilket skiljer den från den införda karpen – och färgen går i mässing, guld och brons. I trånga vatten med hård konkurrens förblir rudan liten och blir en kortvuxen dvärgform, medan den i goda vatten kan bli både stor och tjock. I Östersjön hör den hemma i grunda, varma och vegetationsrika vikar med sötvattenspåverkan.",
+  "image": {
+    "src": "/images/fisk/ruda.webp",
+    "alt": "Ruda i sidoprofil med hög rundryggig kropp, trubbig nos utan skäggtömmar och mässingsgyllene fjäll"
+  },
+  "size": {
+    "maxLengthCm": 45,
+    "maxWeightKg": 3,
+    "maxAgeYears": 12,
+    "typicalLengthCm": { "min": 12, "max": 25 }
+  },
+  "habitat": {
+    "environments": ["brackvatten", "sotvatten"],
+    "distribution": "Grunda, varma och vegetationsrika vikar med sötvattenspåverkan i södra och mellersta Östersjön. Vanlig i dammar, gölar och små sjöar.",
+    "description": "Stillastående och långsamma, syrefattiga vatten med mjuk botten och tät vegetation. Rudan tål sådant som få andra fiskar överlever, och är ofta ensam art i små, igenväxta vatten.",
+    "typicalDepth": { "min": 1, "max": 4 }
+  },
+  "diet": ["Bottendjur", "Insektslarver", "Växtdelar", "Djurplankton"],
+  "spawning": {
+    "period": "Maj–juli",
+    "months": [5, 6, 7],
+    "description": "Leker på grunt, varmt vatten bland vegetation, ofta i flera omgångar under sommaren. Rommen fastnar på vattenväxter. Rudan blir tidigt könsmogen, vilket är en del av dess förmåga att snabbt befolka nya vatten."
+  },
+  "bestTimeOfDay": "Gryning och skymning, ofta bäst i varmt väder",
+  "bestSeason": "Juni–augusti",
+  "calendar": [
+    "low",
+    "low",
+    "low",
+    "low",
+    "good",
+    "best",
+    "best",
+    "best",
+    "good",
+    "low",
+    "low",
+    "low"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Rudan tar inte drag – den betar botten och växter. Mete är metoden för den här arten.",
+      "lures": {
+        "jigs": ["Fungerar inte på ruda"],
+        "wobblers": ["Fungerar inte på ruda"],
+        "spinners": ["Fungerar inte på ruda"],
+        "spoons": ["Fungerar inte på ruda"]
+      },
+      "gear": "Drag är inte aktuellt för ruda – se mete nedan.",
+      "depth": { "min": 1, "max": 3 }
+    },
+    "bait": {
+      "baits": ["Majs", "Deg", "Bröd", "Mask"],
+      "depth": { "min": 1, "max": 3 },
+      "tips": "Flötmete med majs eller deg på grunt, varmt vatten är svårslaget. Rudan är försiktig och nappar ofta trögt – slå an mjukt och ha tålamod. Ett klassiskt sommarmete för barn."
+    },
+    "net": {
+      "meshSizeMm": { "min": 30, "max": 50 },
+      "depth": { "min": 1, "max": 4 },
+      "bestSeason": "Sommar",
+      "tips": "Nät är sällan aktuellt för ruda. Undvik nät i grunda vikar under leken – rudan är dessutom en rolig och lättillgänglig fisk på mete."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": null,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": null,
+    "gearRestrictions": "Fredningsområden i vikar omfattar allt fiske under lekperioden.",
+    "note": "Ruda saknar egna regler i Östersjön, men lokala fredningsområden gäller alla arter inom området. Flytta aldrig ruda mellan vatten – den kan snabbt ta över små sjöar och dammar.",
+    "source": "Havs- och vattenmyndigheten och SLU Artdatabanken",
+    "updated": "2026-07-17"
+  },
+  "tip": "Ruda eller karp? Rudan saknar skäggtömmar helt, karpen har fyra. Hittar du fisk i en liten, igenväxt och syrefattig damm där inget annat borde kunna leva – då är det nästan säkert ruda."
+}

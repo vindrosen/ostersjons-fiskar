@@ -1,9 +1,10 @@
 /**
  * Fiskeregler – sidopanelens regelkort.
  *
- * Reglerna i appen är exempeldata. Brasklappen och källhänvisningen är därför
- * inte valfria dekorationer utan en del av kortet: den som läser ett minimimått
- * här ska aldrig kunna missa att det måste dubbelkollas mot myndigheten.
+ * Reglerna bygger på HaV men är sammanfattade – lokala regler tillkommer.
+ * Brasklappen och källhänvisningen är därför inte valfria dekorationer utan en
+ * del av kortet: den som läser ett minimimått här ska aldrig kunna missa att det
+ * måste dubbelkollas mot den lokala kartan innan man fiskar.
  */
 
 import { ExternalLink, Scale } from "lucide-react";

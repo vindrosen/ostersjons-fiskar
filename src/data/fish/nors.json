@@ -1,0 +1,88 @@
+{
+  "slug": "nors",
+  "name": "Nors",
+  "latinName": "Osmerus eperlanus",
+  "family": "Osmeridae",
+  "familyName": "Norsfiskar",
+  "type": "pelagisk",
+  "commonality": "ovanlig",
+  "origin": "inhemsk",
+  "popularity": 16,
+  "alsoKnownAs": ["Slom", "Kläppar", "Slomsill"],
+  "shortDescription": "En liten stimfisk som luktar färsk gurka. Basföda för gös och abborre, och en gammal delikatess i lekvandringens tid.",
+  "description": "Nors känns lättast igen på lukten: nyfångad nors doftar starkt av färsk gurka, en doft som sitter i händerna länge. Det är en liten, slank och genomskinligt silverblank fisk med förvånansvärt stora, vassa tänder på plogbenet, tungan och gomen – den är trots sin storlek en rovfisk som jagar djurplankton och småfisk. Nors finns i två former, en havslevande och en sötvattensform, och i Östersjön går den upp till norra Bottenviken men saknas kring Gotland. På våren samlas den i stora stim och vandrar mot grunt vatten eller upp i åar för att leka, och just då har den i sekler fångats och torkats eller stekts som en vårdelikatess. Ekologiskt är nors en nyckelart: den är en av de viktigaste bytesfiskarna för gös, och ett bra norsbestånd är ofta förutsättningen för ett bra gösfiske.",
+  "image": {
+    "src": "/images/fisk/nors.webp",
+    "alt": "Nors i sidoprofil med slank silverblank kropp, stor mun och liten fettfena"
+  },
+  "size": {
+    "maxLengthCm": 30,
+    "maxWeightKg": 0.15,
+    "maxAgeYears": 10,
+    "typicalLengthCm": { "min": 12, "max": 20 }
+  },
+  "habitat": {
+    "environments": ["brackvatten", "sotvatten"],
+    "distribution": "Östersjön upp till norra Bottenviken, dock inte kring Gotland, samt i många svenska sjöar. Vanligast i kallare, djupare vatten.",
+    "description": "Pelagisk stimfisk som står i den fria vattenmassan, ofta djupt och i svalt vatten. Söker sig till grunda kustband och åmynningar under lekvandringen på våren.",
+    "typicalDepth": { "min": 5, "max": 30 }
+  },
+  "diet": ["Djurplankton", "Kräftdjur", "Fiskyngel", "Insektslarver"],
+  "spawning": {
+    "period": "Mars–maj",
+    "months": [3, 4, 5],
+    "description": "Vandrar i stora stim mot grunda kustband eller upp i åar tidigt på våren, ofta så snart isen släppt. Rommen fastnar på sten, grus och vegetation. Många norsar dör efter leken."
+  },
+  "bestTimeOfDay": "Skymning och natt",
+  "bestSeason": "April–maj under lekvandringen",
+  "calendar": [
+    "low",
+    "low",
+    "good",
+    "best",
+    "best",
+    "low",
+    "low",
+    "low",
+    "low",
+    "good",
+    "low",
+    "low"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Nors fiskas sällan riktat med spö. Under lekvandringen på våren kan den håvas eller fångas i mängd på grunt vatten, men som sportfisk är den för liten för att målsökas.",
+      "lures": {
+        "jigs": ["Mycket liten mikrojigg"],
+        "wobblers": ["Fungerar sällan"],
+        "spinners": ["Fungerar sällan"],
+        "spoons": ["Litet blänke som lockbete"]
+      },
+      "gear": "Om nors fångas är det på mycket lätt utrustning. Vanligast är dock håv eller finmaskiga redskap under lekvandringen.",
+      "depth": { "min": 1, "max": 10 }
+    },
+    "bait": {
+      "baits": ["Mask", "Liten bit fisk"],
+      "depth": { "min": 1, "max": 8 },
+      "tips": "Under lekvandringen står norsen tätt på grunt vatten och kan fångas på mete med liten krok. Den är ömtålig och förstörs snabbt – ta hand om fångsten direkt."
+    },
+    "net": {
+      "meshSizeMm": { "min": 15, "max": 24 },
+      "depth": { "min": 2, "max": 15 },
+      "bestSeason": "Vår, under lekvandringen",
+      "tips": "Finmaskiga nät fångar nors under leken, men tänk på att de också fångar all annan småfisk. Nors används ofta som betesfisk för gös och gädda."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": null,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": null,
+    "gearRestrictions": "Fredningsområden vid åmynningar kan gälla under lekvandringen.",
+    "note": "Nors saknar minimimått och fångstbegränsning i Östersjön. Använder du nors som betesfisk får den inte flyttas mellan olika vatten – det sprider både sjukdomar och arter dit de inte hör hemma.",
+    "source": "Havs- och vattenmyndigheten och SLU Artdatabanken",
+    "updated": "2026-07-17"
+  },
+  "tip": "Känner du gurklukt om händerna efter att ha tagit i en liten silverfisk är det nors. Ett starkt norsbestånd är dessutom goda nyheter för gösfiskaren – nors är gösens favoritföda."
+}

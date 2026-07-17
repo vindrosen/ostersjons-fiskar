@@ -21,8 +21,9 @@ export function Footer() {
               <span className="text-base font-semibold text-white">{SITE.name}</span>
             </div>
             <p className="mt-3 text-sm leading-relaxed">
-              All information är vägledande och bygger på exempeldata.
-              Kontrollera alltid aktuella fiskeregler innan du ger dig ut.
+              Fiskereglerna bygger på Havs- och vattenmyndighetens uppgifter men
+              är sammanfattade. Lokala regler tillkommer – kontrollera alltid vad
+              som gäller på din plats innan du ger dig ut.
             </p>
           </div>
 

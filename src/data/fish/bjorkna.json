@@ -1,0 +1,88 @@
+{
+  "slug": "bjorkna",
+  "name": "Björkna",
+  "latinName": "Blicca bjoerkna",
+  "family": "Cyprinidae",
+  "familyName": "Karpfiskar",
+  "type": "fredfisk",
+  "commonality": "ovanlig",
+  "origin": "inhemsk",
+  "popularity": 20,
+  "alsoKnownAs": ["Panka", "Silverbraxen", "Bläcka"],
+  "shortDescription": "Braxens mindre, silverglänsande dubbelgångare – skiljs på det stora ögat och de rödanlupna bröstfenorna.",
+  "description": "Björknan förväxlas ständigt med ung braxen, och de två är verkligen lika: samma höga, tillplattade kropp och samma nedåtriktade betmun. Skillnaderna kräver att man tittar noga. Björknan är mer silverglänsande där braxen är mörkare och mässingsfärgad, den har ett tydligt större öga som sitter närmare nosen, och basen på bröst- och bukfenorna har ofta ett rödaktigt anslag. Räknar man fjäll och fenstrålar blir det säkert: björknan har färre analfenstrålar och färre fjäll längs sidolinjen än braxen. Björknan är en flockfisk som betar bottendjur och växtdelar på mjukbottnar i grunda, näringsrika vikar, precis som braxen, men den blir sällan lika stor. I Östersjön hör den hemma i sötvattenspåverkade skärgårdar och grunda fjärdar, och den räknas som en helt vanlig del av kust- och sjöfiskfaunan.",
+  "image": {
+    "src": "/images/fisk/bjorkna.webp",
+    "alt": "Björkna i sidoprofil med hög silverblank kropp, stort öga och rödanlupna bröstfenor"
+  },
+  "size": {
+    "maxLengthCm": 36,
+    "maxWeightKg": 1,
+    "maxAgeYears": 15,
+    "typicalLengthCm": { "min": 15, "max": 25 }
+  },
+  "habitat": {
+    "environments": ["brackvatten", "sotvatten"],
+    "distribution": "Grunda, näringsrika vikar i södra och mellersta Östersjön, i sötvattenspåverkade skärgårdar. Vanlig i sjöar och lugnflytande vattendrag.",
+    "description": "Mjukbottnar i skyddade, vegetationsrika vikar. Rör sig i flockar och betar bottendjur och växtdelar, ofta tillsammans med braxen och mört.",
+    "typicalDepth": { "min": 1, "max": 6 }
+  },
+  "diet": ["Bottendjur", "Insektslarver", "Snäckor", "Växtdelar", "Djurplankton"],
+  "spawning": {
+    "period": "Maj–juni",
+    "months": [5, 6],
+    "description": "Leker på grunt vatten bland vegetation när vattnet nått 15–18 °C. Rommen fastnar på växtligheten. Björknan korsar sig ibland med braxen och mört, vilket ger blandformer som är knepiga att artbestämma."
+  },
+  "bestTimeOfDay": "Gryning och skymning",
+  "bestSeason": "Maj–september",
+  "calendar": [
+    "low",
+    "low",
+    "low",
+    "good",
+    "best",
+    "best",
+    "best",
+    "good",
+    "good",
+    "low",
+    "low",
+    "low"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Björknan tar inte drag – den betar botten. Mete är metoden för den här arten.",
+      "lures": {
+        "jigs": ["Fungerar inte på björkna"],
+        "wobblers": ["Fungerar inte på björkna"],
+        "spinners": ["Fungerar inte på björkna"],
+        "spoons": ["Fungerar inte på björkna"]
+      },
+      "gear": "Drag är inte aktuellt för björkna – se mete nedan.",
+      "depth": { "min": 1, "max": 5 }
+    },
+    "bait": {
+      "baits": ["Mask", "Majs", "Maggots", "Deg"],
+      "depth": { "min": 1, "max": 4 },
+      "tips": "Bottenmete med mask eller majs, gärna med lite förmatning, fungerar bra. Björknan är försiktig – använd liten krok och tunn tafs, och ge fisken tid att ta betet."
+    },
+    "net": {
+      "meshSizeMm": { "min": 30, "max": 45 },
+      "depth": { "min": 1, "max": 6 },
+      "bestSeason": "Sommar",
+      "tips": "Undvik nät i grunda vikar under leken. Björknan trasslar lätt in sig – vittja ofta om du sätter nät."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": null,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": null,
+    "gearRestrictions": "Fredningsområden i vikar omfattar allt fiske under lekperioden.",
+    "note": "Björkna saknar egna regler i Östersjön, men lokala fredningsområden gäller alla arter inom området.",
+    "source": "Havs- och vattenmyndigheten och SLU Artdatabanken",
+    "updated": "2026-07-17"
+  },
+  "tip": "Björkna eller ung braxen? Tumregeln: hos björknan är avståndet mellan öga och nos mindre än ögats diameter, och ögat är stort. Braxen har mindre öga längre bak. Björknan är också silvrigare och har ofta rött vid bröstfenornas bas."
+}

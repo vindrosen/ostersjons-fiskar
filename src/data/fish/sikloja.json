@@ -1,0 +1,88 @@
+{
+  "slug": "sikloja",
+  "name": "Siklöja",
+  "latinName": "Coregonus albula",
+  "family": "Salmonidae",
+  "familyName": "Laxfiskar",
+  "type": "laxfisk",
+  "commonality": "ovanlig",
+  "origin": "inhemsk",
+  "popularity": 17,
+  "alsoKnownAs": ["Löja (ej samma som löja/Alburnus)", "Blecka"],
+  "shortDescription": "Bottenvikens lilla laxfisk vars rom blir den guldgula löjrommen. Liten till växten, men en av kustens viktigaste matfiskar.",
+  "description": "Siklöjan är en liten laxfisk, sällan mer än 30 centimeter och ett par ord tung, men den bär en av Sveriges mest eftertraktade delikatesser: löjrommen. Den guldorange rommen skördas ur lekmogna honor i Bottenviken varje höst, och Kalix löjrom är så förknippad med sin plats att den fått skyddad ursprungsbeteckning i EU. Siklöjan är en slank, silverblank släkting till siken, med underbett och den lilla fettfenan som avslöjar familjen. Den lever pelagiskt i stora stim och äter djurplankton, precis som en miniatyrsill. På sommaren är den utspridd över Bottenviken, och på hösten vandrar den in mot den norra kusten för att leka på sand- och grusbottnar. Bestånden i Bottenviken skiljer sig genetiskt åt mellan olika älvar – siklöjan från Kalixälven är inte densamma som den längre söderut.",
+  "image": {
+    "src": "/images/fisk/sikloja.webp",
+    "alt": "Siklöja i sidoprofil med slank silverblank kropp, underbett och liten fettfena"
+  },
+  "size": {
+    "maxLengthCm": 30,
+    "maxWeightKg": 0.2,
+    "maxAgeYears": 10,
+    "typicalLengthCm": { "min": 12, "max": 20 }
+  },
+  "habitat": {
+    "environments": ["brackvatten", "sotvatten"],
+    "distribution": "Främst Bottenviken och Bottenhavet, samt i många sjöar. Vanligast i kallt, djupt vatten.",
+    "description": "Pelagisk stimfisk i den fria vattenmassan. Utspridd över öppet vatten på sommaren och samlad vid den norra kusten under höstleken.",
+    "typicalDepth": { "min": 3, "max": 30 }
+  },
+  "diet": ["Djurplankton", "Hoppkräftor", "Insektslarver"],
+  "spawning": {
+    "period": "Oktober–december",
+    "months": [10, 11, 12],
+    "description": "Vandrar in mot den norra Bottenvikskusten på hösten och leker på sand- och grusbottnar på varierande djup. En normalstor hona lägger bara omkring 2 000 romkorn – lite jämfört med andra fiskar av samma storlek, men rommen är eftertraktad som löjrom."
+  },
+  "bestTimeOfDay": "Skymning",
+  "bestSeason": "Augusti–november",
+  "calendar": [
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "good",
+    "good",
+    "good",
+    "best",
+    "best",
+    "good",
+    "low"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Siklöja fiskas i praktiken inte med spö – den är för liten och äter plankton. Yrkesfisket i Bottenviken sker med trål på hösten för att skörda rommen.",
+      "lures": {
+        "jigs": ["Fungerar sällan – arten äter plankton"],
+        "wobblers": ["Fungerar sällan"],
+        "spinners": ["Fungerar sällan"],
+        "spoons": ["Fungerar sällan"]
+      },
+      "gear": "Spöfiske är inte aktuellt. Siklöja fångas med nät eller, yrkesmässigt, med trål.",
+      "depth": { "min": 3, "max": 20 }
+    },
+    "bait": {
+      "baits": ["Mycket små beten, sällan aktuellt"],
+      "depth": { "min": 3, "max": 15 },
+      "tips": "Siklöja tas inte på mete i någon nämnvärd omfattning. Vill man fånga den är finmaskigt nät den enda realistiska vägen för fritidsfiskaren."
+    },
+    "net": {
+      "meshSizeMm": { "min": 16, "max": 24 },
+      "depth": { "min": 3, "max": 20 },
+      "bestSeason": "Höst, under leken",
+      "tips": "Finmaskiga siklöjenät sätts under höstleken. I Bottenviken finns särskilda regler för siklöjefisket – kontrollera alltid vad som gäller i ditt område innan du sätter redskap."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": null,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": "Särskilda regler och fredningsområden för siklöjefiske finns i Bottenviken under höstleken",
+    "gearRestrictions": "Trålfiske efter siklöja är förbehållet yrkesfisket och kräver tillstånd.",
+    "note": "Siklöja saknar generellt minimimått, men fisket i Bottenviken – där rommen skördas som löjrom – är särskilt reglerat, med områdes- och tidsbegränsningar. Kontrollera alltid de lokala reglerna innan du fiskar.",
+    "source": "Havs- och vattenmyndigheten och SLU Artdatabanken",
+    "updated": "2026-07-17"
+  },
+  "tip": "Siklöjan är knappast en sportfisk, men den är värd att känna till: det är dess rom som blir den guldgula löjrommen. Ett friskt siklöjebestånd är ryggraden i ett helt kustfiske i norr."
+}

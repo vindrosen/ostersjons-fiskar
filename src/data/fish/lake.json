@@ -1,0 +1,88 @@
+{
+  "slug": "lake",
+  "name": "Lake",
+  "latinName": "Lota lota",
+  "family": "Lotidae",
+  "familyName": "Lakfiskar",
+  "type": "rovfisk",
+  "commonality": "ovanlig",
+  "origin": "inhemsk",
+  "popularity": 18,
+  "alsoKnownAs": ["Laka", "Ålkusa", "Kvabbe"],
+  "shortDescription": "Sötvattnens enda torskfisk – en nattaktiv bottenrovfisk som leker mitt i vintern under isen.",
+  "description": "Laken är en udda fågel: den enda torskfisken som lever i sötvatten, och en fisk som gör allting tvärtom. När andra arter är som mest aktiva på sommaren blir laken slö och gömmer sig – den tål inte vatten varmare än 11–14 grader och överlever den varma årstiden på fettet i sin stora, läckra lever. Och när isen lägger sig och de flesta fiskar drar ner på tempot vaknar laken till liv och leker mitt i vintern, ofta under isen i januari och februari. Den är långsträckt och ållik med marmorerad brungrön hud och en enda skäggtöm under hakan, som avslöjar torsksläktskapet. I Östersjön finns laken i kustvattnen i Bottenviken och söderut till Kalmarsund, samt i sjöar och vattendrag i nästan hela landet. Bestånden har tyvärr minskat påtagligt, och arten är rödlistad.",
+  "image": {
+    "src": "/images/fisk/lake.webp",
+    "alt": "Lake i sidoprofil med långsträckt ållik kropp, marmorerad brungrön hud och skäggtöm under hakan"
+  },
+  "size": {
+    "maxLengthCm": 100,
+    "maxWeightKg": 5,
+    "maxAgeYears": 20,
+    "typicalLengthCm": { "min": 30, "max": 55 }
+  },
+  "habitat": {
+    "environments": ["brackvatten", "sotvatten"],
+    "distribution": "Kustvatten i Bottenviken och söderut till Kalmarsund, samt i sjöar och vattendrag i nästan hela landet. Bestånden minskar och arten är rödlistad.",
+    "description": "Kallt, djupt vatten över hård- och blandbottnar. Nattaktiv och gömd om dagen. Stora individer håller sig i det kalla djupet, medan små lakar kan stå grunt.",
+    "typicalDepth": { "min": 2, "max": 40 }
+  },
+  "diet": ["Småfisk", "Kräftdjur", "Fiskrom", "Bottendjur"],
+  "spawning": {
+    "period": "December–februari",
+    "months": [12, 1, 2],
+    "description": "Leker mitt i vintern, ofta under isen, när vattnet är som kallast. Fiskarna samlas på grunda grus- och stenbottnar och släpper enorma mängder liten, flytande rom. Just vinterleken gör laken helt unik bland våra fiskar."
+  },
+  "bestTimeOfDay": "Natt",
+  "bestSeason": "November–mars, allra bäst kring vinterleken",
+  "calendar": [
+    "best",
+    "best",
+    "good",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "good",
+    "best",
+    "best"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Laken tas oftast på bottenmete eller pimpel nattetid, gärna kring vinterleken. Den jagar med luktsinnet i mörker och kallt vatten, så drag i fria vattnet fungerar sällan.",
+      "lures": {
+        "jigs": ["Pimpel med bete nära botten", "Tung jigg på djupt vatten"],
+        "wobblers": ["Fungerar sällan"],
+        "spinners": ["Fungerar sällan"],
+        "spoons": ["Pimpeldrag med maskbete i vinterfisket"]
+      },
+      "gear": "Bottenmetesspö eller pimpelspö. Laken är stark men går inte långa ryck – den tar betet på botten och håller sig där. Fiska nattetid för bäst resultat.",
+      "depth": { "min": 2, "max": 20 }
+    },
+    "bait": {
+      "baits": ["Mask", "Betesfisk", "Fiskbit"],
+      "depth": { "min": 2, "max": 20 },
+      "tips": "Bottenmete med mask eller betesfisk nattetid är det klassiska lakfisket, ofta från is på vintern. Laken hittar betet med lukten – lägg det på botten och ge den tid."
+    },
+    "net": {
+      "meshSizeMm": { "min": 40, "max": 60 },
+      "depth": { "min": 3, "max": 25 },
+      "bestSeason": "Vinter, kring leken",
+      "tips": "Eftersom laken minskat är den värd att fiska varsamt. Överväg att återutsätta stora, lekmogna honor och ta bara upp det du verkligen ska äta."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": null,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": null,
+    "gearRestrictions": "Lokala regler kan finnas i vissa områden.",
+    "note": "Laken saknar generellt minimimått i havet, men arten är rödlistad och bestånden minskar i stora delar av landet. Fiska ansvarsfullt: ta bara upp det du ska äta och skona lekfisk på vintern.",
+    "source": "Havs- och vattenmyndigheten och SLU Artdatabanken",
+    "updated": "2026-07-17"
+  },
+  "tip": "Laken är en vinterfisk. Den absolut bästa tiden är de kalla veckorna kring leken i januari–februari, nattetid, med bete på botten. På sommaren är den nästan omöjlig att få – då ligger den slö i det kalla djupet."
+}

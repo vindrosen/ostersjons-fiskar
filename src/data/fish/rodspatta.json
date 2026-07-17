@@ -1,0 +1,88 @@
+{
+  "slug": "rodspatta",
+  "name": "Rödspätta",
+  "latinName": "Pleuronectes platessa",
+  "family": "Pleuronectidae",
+  "familyName": "Flundrefiskar",
+  "type": "plattfisk",
+  "commonality": "ovanlig",
+  "origin": "inhemsk",
+  "popularity": 25,
+  "alsoKnownAs": ["Spätta", "Rödspotta"],
+  "shortDescription": "Plattfisken med de orange prickarna – en högervänd flundra som trivs på renare sandbottnar i södra Östersjön.",
+  "description": "Rödspättan är kanske den mest omtyckta av matplattfiskarna, och den känns lätt igen på sina lysande orangeröda prickar utspridda över den släta, brunaktiga ovansidan. Bakom ögonen sitter en rad av fyra till sju små benknölar, ett säkert kännetecken som skiljer den från skrubbskäddan. Liksom alla plattfiskar börjar rödspättan livet som ett symmetriskt yngel i den fria vattenmassan och genomgår sedan förvandlingen där det ena ögat vandrar över huvudet så att båda hamnar på samma sida – hos rödspättan alltid höger sida. Den gräver ner sig i sand och lever av musslor, havsborstmaskar och små kräftdjur. Rödspättan kräver högre salthalt än skrubbskäddan och är därför vanligast i södra Östersjön, Öresund och Västerhavet; norrut i det sötare vattnet blir den snabbt ovanlig.",
+  "image": {
+    "src": "/images/fisk/rodspatta.webp",
+    "alt": "Rödspätta sedd uppifrån med slät brun ovansida, lysande orangeröda prickar och benknölar bakom ögonen"
+  },
+  "size": {
+    "maxLengthCm": 70,
+    "maxWeightKg": 4,
+    "maxAgeYears": 30,
+    "typicalLengthCm": { "min": 25, "max": 40 }
+  },
+  "habitat": {
+    "environments": ["saltvatten", "brackvatten"],
+    "distribution": "Vanligast i södra Östersjön, Öresund och Västerhavet, där salthalten är högre. Blir ovanlig norrut i det sötare vattnet.",
+    "description": "Renare sand- och grusbottnar där den kan gräva ner sig. Går in på grundare vatten på sommaren och drar ut på djupare vatten under den kalla årstiden.",
+    "typicalDepth": { "min": 3, "max": 50 }
+  },
+  "diet": ["Musslor", "Havsborstmaskar", "Kräftdjur", "Ormstjärnor"],
+  "spawning": {
+    "period": "Januari–april",
+    "months": [1, 2, 3, 4],
+    "description": "Leker på djupare vatten under vintern och våren, med flytande rom i den fria vattenmassan. Den kräver hög salthalt för att rommen ska sväva, vilket begränsar leken till de saltare, södra delarna av Östersjön."
+  },
+  "bestTimeOfDay": "Dagtid och skymning",
+  "bestSeason": "Maj–september",
+  "calendar": [
+    "low",
+    "low",
+    "low",
+    "good",
+    "best",
+    "best",
+    "best",
+    "best",
+    "good",
+    "good",
+    "low",
+    "low"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Rödspätta tas på bottenmete, inte på drag. Den ligger nedgrävd och hittar betet med lukten – ett flundretakel med pärlor och blänke ovanför kroken lockar den till betet.",
+      "lures": {
+        "jigs": ["Liten jigg nära botten kan ge enstaka rödspättor"],
+        "wobblers": ["Fungerar dåligt på rödspätta"],
+        "spinners": ["Fungerar dåligt på rödspätta"],
+        "spoons": ["Blänke som lockbete ovanför betekroken på flundretakel"]
+      },
+      "gear": "Bottenmetesspö eller lätt havsspö 40–120 g. Ett flundretakel med pärlor och ett litet blänke ovanför kroken drar fiskens uppmärksamhet till betet.",
+      "depth": { "min": 3, "max": 25 }
+    },
+    "bait": {
+      "baits": ["Havsborstmask", "Musselkött", "Räka", "Sillbit"],
+      "depth": { "min": 3, "max": 20 },
+      "tips": "Bottenmete med havsborstmask från brygga, pir eller båt är svårslaget. Låt betet ligga en stund och dra sedan några meter – rödspättan lyfter från botten och följer efter."
+    },
+    "net": {
+      "meshSizeMm": { "min": 60, "max": 80 },
+      "depth": { "min": 5, "max": 30 },
+      "bestSeason": "Sommar och tidig höst",
+      "tips": "Rödspättenät sätts på sandbottnar. Vittja regelbundet – plattfisk förlorar snabbt kvalitet i näten under varma perioder."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": 25,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": null,
+    "gearRestrictions": "Minimimåttet gäller fiske med alla tillåtna redskap utom handredskap.",
+    "note": "Minimimåttet för rödspätta är 25 cm i Östersjöns samtliga delområden. Måttet gäller formellt fiske med alla redskap utom handredskap (spö), men även den som metar bör respektera det och släppa tillbaka undermålig fisk. Lokala fredningsområden kan tillkomma.",
+    "source": "Havs- och vattenmyndigheten",
+    "updated": "2026-07-17"
+  },
+  "tip": "Rödspätta eller skrubbskädda? Rödspättan har lysande orange prickar och en rad benknölar bakom ögonen, och känns slät på ovansidan. Skrubbskäddan är sträv och saknar de orange prickarna. Rödspättan är dessutom mest vanlig i de saltare, södra delarna."
+}

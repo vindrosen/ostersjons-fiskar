@@ -1,9 +1,9 @@
 /**
  * Om-sidan: vad guiden är, var datat kommer ifrån och vad den inte är.
  *
- * Sidan finns framför allt av ärlighetsskäl. Appens innehåll är exempeldata,
- * och en fiskeguide som inte är tydlig med det kan i värsta fall få någon att
- * bryta mot fiskereglerna.
+ * Sidan finns framför allt av ärlighetsskäl. Reglerna bygger på HaV men är
+ * sammanfattade, och en fiskeguide som inte är tydlig med sina begränsningar
+ * kan i värsta fall få någon att bryta mot fiskereglerna.
  */
 
 import type { Metadata } from "next";

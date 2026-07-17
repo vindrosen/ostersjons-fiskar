@@ -1,0 +1,88 @@
+{
+  "slug": "tanglake",
+  "name": "Tånglake",
+  "latinName": "Zoarces viviparus",
+  "family": "Zoarcidae",
+  "familyName": "Tånglakefiskar",
+  "type": "rovfisk",
+  "commonality": "ovanlig",
+  "origin": "inhemsk",
+  "popularity": 23,
+  "alsoKnownAs": ["Ålkusa", "Tånglaka", "Kvabbe"],
+  "shortDescription": "Kustens egen livfödare – en ållik tångfisk som till skillnad från nästan alla andra fiskar föder levande ungar.",
+  "description": "Tånglaken gör något nästan ingen annan fisk i våra vatten gör: den föder levande ungar. I stället för att lägga rom bär honan sina ägg inne i kroppen, och ungarna utvecklas färdigt inuti henne innan de föds som små, simfärdiga miniatyrer – mellan ett trettiotal och flera hundra åt gången. Paret parar sig på sensommaren, och ungarna föds mitt i vintern, ungefär fyra månader senare. Tånglaken är en långsträckt, ållik bottenfisk med bred, sammanhängande rygg-, stjärt- och analfena och en färg i gulbrunt med mörkare marmorering. Den lever gömd i tångbältet och bland stenar på grunt vatten under den varma årstiden och drar ut på djupare vatten om vintern. Den finns längs hela den svenska kusten och är en ishavsrelikt i Östersjön – en fisk som stannade kvar när istidens hav drog sig tillbaka. Tånglaken är också en känslig miljöindikator; forskare studerar dess yngel för att mäta havets hälsa.",
+  "image": {
+    "src": "/images/fisk/tanglake.webp",
+    "alt": "Tånglake i sidoprofil med långsträckt ållik kropp, gulbrun marmorerad hud och sammanhängande rygg- och stjärtfena"
+  },
+  "size": {
+    "maxLengthCm": 50,
+    "maxWeightKg": 0.5,
+    "maxAgeYears": 10,
+    "typicalLengthCm": { "min": 20, "max": 30 }
+  },
+  "habitat": {
+    "environments": ["brackvatten", "saltvatten"],
+    "distribution": "Längs hela den svenska kusten, inklusive hela Östersjön. En ishavsrelikt som anpassat sig till bräckt och tidvis varmt vatten.",
+    "description": "Grunt vatten i tångbältet och bland stenar under den varma årstiden. Drar ut på djupare, svalare vatten om vintern. En utpräglad bottenfisk som gömmer sig i vegetation och skrevor.",
+    "typicalDepth": { "min": 0, "max": 20 }
+  },
+  "diet": ["Kräftdjur", "Havsborstmaskar", "Småfisk", "Snäckor", "Fiskrom"],
+  "spawning": {
+    "period": "Parar sig augusti–september, föder ungar i december–januari",
+    "months": [12, 1],
+    "description": "Tånglaken föder levande ungar, vilket är mycket ovanligt bland fiskar. Paret parar sig på sensommaren, och ungarna utvecklas inne i honan i omkring fyra månader innan de föds mitt i vintern – från ett trettiotal upp till flera hundra fullt simfärdiga ungar."
+  },
+  "bestTimeOfDay": "Dagtid och skymning",
+  "bestSeason": "Augusti–november",
+  "calendar": [
+    "low",
+    "low",
+    "low",
+    "good",
+    "good",
+    "good",
+    "good",
+    "best",
+    "best",
+    "best",
+    "good",
+    "low"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Tånglaken tas nästan alltid på bottenmete, inte på drag. Den lever gömd bland tång och sten och jagar inte i fria vattnet.",
+      "lures": {
+        "jigs": ["Liten jigg nära botten kan ge enstaka tånglakar"],
+        "wobblers": ["Fungerar sällan"],
+        "spinners": ["Fungerar sällan"],
+        "spoons": ["Fungerar sällan"]
+      },
+      "gear": "Om tånglake tas på spö är det på lätt utrustning nära botten. Vanligast är dock mete från brygga, pir eller strand.",
+      "depth": { "min": 0, "max": 10 }
+    },
+    "bait": {
+      "baits": ["Havsborstmask", "Räka", "Musselkött", "Mask"],
+      "depth": { "min": 0, "max": 8 },
+      "tips": "Bottenmete med havsborstmask från en brygga eller pir är det klassiska tånglakefisket. Den nappar villigt och är en vanlig fångst för den som metar vid kusten – ofta barnens första saltvattensfisk."
+    },
+    "net": {
+      "meshSizeMm": { "min": 30, "max": 45 },
+      "depth": { "min": 1, "max": 15 },
+      "bestSeason": "Sensommar och höst",
+      "tips": "Tånglake fastnar ibland i kustnät men är sällan målet. Släpp gärna tillbaka honor på vintern – de bär då levande ungar."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": null,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": null,
+    "gearRestrictions": "Fredningsområden längs kusten kan omfatta allt fiske under vissa tider.",
+    "note": "Tånglake saknar minimimått och fångstbegränsning i Östersjön. Lokala fredningsområden gäller dock alla arter inom området. Honor som fångas på vintern kan bära levande ungar – överväg att släppa tillbaka dem.",
+    "source": "Havs- och vattenmyndigheten och SLU Artdatabanken",
+    "updated": "2026-07-17"
+  },
+  "tip": "Tånglaken är en av få fiskar hos oss som föder levande ungar. Fångar du en tjock hona på senhösten eller vintern bär hon troligen ungar – släpp tillbaka den varsamt så bidrar du till nästa generation."
+}

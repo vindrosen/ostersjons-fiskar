@@ -1,0 +1,88 @@
+{
+  "slug": "piggvar",
+  "name": "Piggvar",
+  "latinName": "Scophthalmus maximus",
+  "family": "Scophthalmidae",
+  "familyName": "Piggvarsfiskar",
+  "type": "plattfisk",
+  "commonality": "ovanlig",
+  "origin": "inhemsk",
+  "popularity": 26,
+  "alsoKnownAs": ["Pigghvar", "Slätvar (nära släkting)"],
+  "shortDescription": "Plattfiskarnas delikatess – en nästan rund, vänstervänd rovfisk med benknottror i stället för fjäll.",
+  "description": "Piggvaren är plattfiskarnas finsmakare-favorit och en av de mest värdefulla matfiskarna i havet. Den är omedelbart igenkännlig: kroppen är nästan cirkelrund och plattare än de flesta andra plattfiskar, och i stället för fjäll är ovansidan strödd med små hårda benknottror – de \"piggar\" som gett arten dess namn. Piggvaren är vänstervänd, det vill säga båda ögonen sitter på vänster sida, tvärtemot rödspätta och skrubbskädda. Färgen är sandgrå till brunspräcklig och kan skifta för att smälta in i bottnen. Till skillnad från de betande plattfiskarna är piggvaren en aktiv rovfisk som ligger i bakhåll på sand- och grusbottnar och slår efter småfisk – gärna tobis, smågädda och unga plattfiskar. Den kräver saltare vatten och är därför vanligast i södra Östersjön, Öresund och Västerhavet.",
+  "image": {
+    "src": "/images/fisk/piggvar.webp",
+    "alt": "Piggvar sedd uppifrån med nästan rund kropp, sandgrå knottrig hud utan fjäll och båda ögonen på vänster sida"
+  },
+  "size": {
+    "maxLengthCm": 100,
+    "maxWeightKg": 25,
+    "maxAgeYears": 25,
+    "typicalLengthCm": { "min": 30, "max": 50 }
+  },
+  "habitat": {
+    "environments": ["saltvatten", "brackvatten"],
+    "distribution": "Vanligast i södra Östersjön, Öresund och Västerhavet, där salthalten är högre. Blir ovanlig norrut i det sötare vattnet.",
+    "description": "Sand- och grusbottnar där den ligger i bakhåll. En aktiv rovfisk som slår efter småfisk, till skillnad från de betande plattfiskarna. Byter färg för att smälta in i bottnen.",
+    "typicalDepth": { "min": 5, "max": 60 }
+  },
+  "diet": ["Småfisk", "Tobis", "Smågädda", "Unga plattfiskar", "Kräftdjur"],
+  "spawning": {
+    "period": "Maj–juli",
+    "months": [5, 6, 7],
+    "description": "Leker på djupare vatten under försommaren, med flytande rom i den fria vattenmassan. Kräver hög salthalt för att rommen ska sväva, vilket begränsar leken till de saltare delarna av havet."
+  },
+  "bestTimeOfDay": "Dagtid",
+  "bestSeason": "Maj–september",
+  "calendar": [
+    "low",
+    "low",
+    "low",
+    "good",
+    "best",
+    "best",
+    "best",
+    "best",
+    "good",
+    "low",
+    "low",
+    "low"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Eftersom piggvaren är en rovfisk kan den tas på bete som rör sig nära botten. Vanligast är dock bottenmete med fiskbete på sandbottnar där den ligger i bakhåll.",
+      "lures": {
+        "jigs": ["Gummifisk nära botten kan ge piggvar"],
+        "wobblers": ["Djupgående wobbler nära botten"],
+        "spinners": ["Fungerar sällan"],
+        "spoons": ["Blänke ovanför betekroken på bottentackel"]
+      },
+      "gear": "Bottenmetesspö eller lätt havsspö. Ett bete som rör sig långsamt längs bottnen kan locka den fram, men de flesta piggvarar tas på fast bottenmete med fiskbete.",
+      "depth": { "min": 5, "max": 30 }
+    },
+    "bait": {
+      "baits": ["Tobis", "Sillbit", "Betesfisk", "Havsborstmask"],
+      "depth": { "min": 5, "max": 25 },
+      "tips": "Bottenmete med en hel liten fisk eller sillbit på sandbotten är effektivt, eftersom piggvaren jagar fisk. Låt betet ligga och ge den tid att ta det ordentligt innan du slår an."
+    },
+    "net": {
+      "meshSizeMm": { "min": 100, "max": 130 },
+      "depth": { "min": 5, "max": 40 },
+      "bestSeason": "Sommar",
+      "tips": "Piggvarnät sätts på sand- och grusbottnar med grov maska. Vittja regelbundet så att fångsten håller kvaliteten."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": 30,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": null,
+    "gearRestrictions": "Minimimåttet gäller fiske med alla tillåtna redskap utom handredskap.",
+    "note": "Minimimåttet för piggvar är 30 cm i samtliga svenska havsområden. Måttet gäller formellt fiske med alla redskap utom handredskap (spö), men även den som fiskar med spö bör respektera det och släppa tillbaka undermålig fisk. Piggvar är en värdefull och relativt fåtalig art – hantera bestånden varsamt.",
+    "source": "Havs- och vattenmyndigheten",
+    "updated": "2026-07-17"
+  },
+  "tip": "Piggvar eller rödspätta? Piggvaren är nästan rund, vänstervänd (ögonen på vänster sida) och har hårda benknottror i stället för fjäll. Rödspättan är avlång, högervänd och slät med orange prickar. Piggvaren är dessutom en rovfisk – ta fiskbete, inte mask."
+}

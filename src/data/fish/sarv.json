@@ -1,0 +1,88 @@
+{
+  "slug": "sarv",
+  "name": "Sarv",
+  "latinName": "Scardinius erythrophthalmus",
+  "family": "Cyprinidae",
+  "familyName": "Karpfiskar",
+  "type": "fredfisk",
+  "commonality": "ovanlig",
+  "origin": "inhemsk",
+  "popularity": 19,
+  "alsoKnownAs": ["Rudskalle", "Sarf"],
+  "shortDescription": "Mörtens vackrare kusin – mässingsblank med lysande röda fenor och en uppåtvänd mun byggd för att äta i ytan.",
+  "description": "Sarven ser vid en snabb blick ut som en mört, men den är en påtagligt vackrare fisk: kroppen skiftar i mässing och guld, och fenorna är intensivt röda – tydligare röda än mörtens. Det säkraste kännetecknet är munnen, som är uppåtvänd med ett tydligt underbett, byggd för att beta föda från vattenytan och från växter. Sarvens ryggfena sitter också längre bak på kroppen än mörtens. Den trivs i grunda, vegetationsrika och stillsamma vikar med gott om vattenväxter, och i Östersjön håller den till i sötvattenspåverkade skärgårdar och grunda fjärdar. Sarven är en utpräglad växtätare som blir alltmer vegetarisk med åldern, och stora sarvar betar mest på undervattensväxter och alger. Den korsar sig ibland med mört och braxen, vilket kan göra artbestämningen till ett riktigt kluringsjobb.",
+  "image": {
+    "src": "/images/fisk/sarv.webp",
+    "alt": "Sarv i sidoprofil med mässingsblanka fjäll, uppåtvänd mun och lysande röda fenor"
+  },
+  "size": {
+    "maxLengthCm": 45,
+    "maxWeightKg": 2,
+    "maxAgeYears": 17,
+    "typicalLengthCm": { "min": 15, "max": 30 }
+  },
+  "habitat": {
+    "environments": ["brackvatten", "sotvatten"],
+    "distribution": "Grunda, vegetationsrika vikar i södra och mellersta Östersjön, framför allt i sötvattenspåverkade skärgårdar. Vanlig i sjöar.",
+    "description": "Stillsamma, grunda vikar med rik vegetation och gott om vattenväxter. Sarven står ofta högt i vattnet och betar i och strax under ytan.",
+    "typicalDepth": { "min": 1, "max": 5 }
+  },
+  "diet": ["Vattenväxter", "Alger", "Insekter", "Snäckor", "Djurplankton"],
+  "spawning": {
+    "period": "Maj–juni",
+    "months": [5, 6],
+    "description": "Leker på grunt vatten bland vattenväxter när temperaturen når 15–18 °C. Rommen fastnar på växtligheten. Sarven korsar sig ibland med mört och braxen, vilket ger blandformer som är svåra att artbestämma."
+  },
+  "bestTimeOfDay": "Dagtid, ofta bäst i soligt väder",
+  "bestSeason": "Maj–september",
+  "calendar": [
+    "low",
+    "low",
+    "low",
+    "good",
+    "good",
+    "best",
+    "best",
+    "best",
+    "good",
+    "low",
+    "low",
+    "low"
+  ],
+  "fishing": {
+    "spinning": {
+      "bestMethod": "Sarven tar inte drag – den betar växter och plankton. Mete är metoden för den här arten.",
+      "lures": {
+        "jigs": ["Fungerar inte på sarv"],
+        "wobblers": ["Fungerar inte på sarv"],
+        "spinners": ["Fungerar inte på sarv"],
+        "spoons": ["Fungerar inte på sarv"]
+      },
+      "gear": "Drag är inte aktuellt för sarv – se mete nedan.",
+      "depth": { "min": 1, "max": 4 }
+    },
+    "bait": {
+      "baits": ["Majs", "Bröd", "Deg", "Mask"],
+      "depth": { "min": 1, "max": 3 },
+      "tips": "Flötmete högt i vattnet med majs eller bröd fungerar bra – sarven står ofta strax under ytan. Fiska nära vass och vattenväxter, och håll dig lågt eftersom sarven är skygg."
+    },
+    "net": {
+      "meshSizeMm": { "min": 30, "max": 45 },
+      "depth": { "min": 1, "max": 5 },
+      "bestSeason": "Sommar",
+      "tips": "Undvik nät i grunda vikar under leken på våren. Sarven är en betydligt roligare fisk på flötmete än i nät."
+    }
+  },
+  "regulations": {
+    "protected": false,
+    "minSizeCm": null,
+    "maxSizeCm": null,
+    "bagLimit": null,
+    "closedSeason": null,
+    "gearRestrictions": "Fredningsområden i vikar omfattar allt fiske under lekperioden.",
+    "note": "Sarv saknar egna regler i Östersjön, men lokala fredningsområden gäller alla arter inom området.",
+    "source": "Havs- och vattenmyndigheten och SLU Artdatabanken",
+    "updated": "2026-07-17"
+  },
+  "tip": "Sarv och mört blandas lätt ihop. Kolla munnen och fenorna: sarven har uppåtvänd mun med underbett och klart röda fenor, medan mörten har rakare mun och rött bara i ögat. Sarven är dessutom gulare och mässingsfärgad."
+}
